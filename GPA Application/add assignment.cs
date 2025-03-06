@@ -25,9 +25,30 @@ namespace GPA_Application
             string description = richTextBox2.Text.Trim();
             DateTime dueDate = dateTimePicker1.Value;
 
+
             Assignment_Details newAssignment = new Assignment_Details(subjectName, description, dueDate);
             Assignment_Storage.AddAssignment(newAssignment); // Add assignment to the list
+
+            
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+         
+            
+            if (!string.IsNullOrEmpty(richTextBox1.Text) &&
+
+                !string.IsNullOrEmpty(richTextBox2.Text)) 
+            {
+                
+                MessageBox.Show("Assignment saved Successfully","Success",MessageBoxButtons.OK,MessageBoxIcon.Information);
+            }
+            else
+            {
+                
+                MessageBox.Show("Please fill in all fields","Error",MessageBoxButtons.OK,MessageBoxIcon.Warning);
+            }
+        }
+        
     }
 }
-
