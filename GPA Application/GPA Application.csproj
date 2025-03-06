@@ -52,6 +52,7 @@
     <Compile Include="add assignment.Designer.cs">
       <DependentUpon>add assignment.cs</DependentUpon>
     </Compile>
+    <Compile Include="Assignment Details.cs" />
     <Compile Include="create.cs">
       <SubType>Form</SubType>
     </Compile>
