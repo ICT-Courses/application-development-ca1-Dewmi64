@@ -12,4 +12,3 @@ C:\Users\ASUS\source\repos\GPA Application\GPA Application\obj\Debug\GPA Applica
 C:\Users\ASUS\source\repos\GPA Application\GPA Application\obj\Debug\GPA Application.exe
 C:\Users\ASUS\source\repos\GPA Application\GPA Application\obj\Debug\GPA Application.pdb
 C:\Users\ASUS\source\repos\GPA Application\GPA Application\obj\Debug\GPA_Application.add_assignment.resources
-C:\Users\ASUS\source\repos\GPA Application\GPA Application\obj\Debug\GPA_Application.AssignmentStorage.resources
