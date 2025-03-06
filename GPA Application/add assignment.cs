@@ -42,6 +42,10 @@ namespace GPA_Application
             {
                 
                 MessageBox.Show("Assignment saved Successfully","Success",MessageBoxButtons.OK,MessageBoxIcon.Information);
+
+                richTextBox1.Clear();
+                richTextBox2.Clear();
+                dateTimePicker1.Value = DateTime.Now;
             }
             else
             {
