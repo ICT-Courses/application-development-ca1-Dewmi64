@@ -24,12 +24,13 @@ namespace GPA_Application
 
         private void button4_Click(object sender, EventArgs e)
         {
-           
+            add_assignment f2 = new add_assignment();
+            f2.Show();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-
+            
         }
     }
 }
