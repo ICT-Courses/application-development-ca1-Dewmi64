@@ -53,6 +53,11 @@ namespace GPA_Application
                 MessageBox.Show("Please fill in all fields","Error",MessageBoxButtons.OK,MessageBoxIcon.Warning);
             }
         }
-        
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            dashbord f2 = new dashbord();
+            f2.Show();
+        }
     }
 }
