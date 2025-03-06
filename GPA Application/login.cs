@@ -44,7 +44,9 @@ namespace GPA_Application
             {
                 MessageBox.Show("Login successful!","Login Successful",MessageBoxButtons.OK,MessageBoxIcon.Information);
                
-
+                dashbord f2 = new dashbord();
+                this.Hide();
+                f2.Show();
                 
             }
 
