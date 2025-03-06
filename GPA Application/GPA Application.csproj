@@ -52,6 +52,12 @@
     <Compile Include="create.Designer.cs">
       <DependentUpon>create.cs</DependentUpon>
     </Compile>
+    <Compile Include="dashbord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dashbord.Designer.cs">
+      <DependentUpon>dashbord.cs</DependentUpon>
+    </Compile>
     <Compile Include="Home.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -69,6 +75,9 @@
     <Compile Include="UserCredential.cs" />
     <EmbeddedResource Include="create.resx">
       <DependentUpon>create.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dashbord.resx">
+      <DependentUpon>dashbord.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
