@@ -16,5 +16,10 @@ namespace GPA_Application
         {
             InitializeComponent();
         }
+
+        private void add_assignment_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
