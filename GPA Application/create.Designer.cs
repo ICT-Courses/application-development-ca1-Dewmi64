@@ -58,9 +58,9 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Location = new System.Drawing.Point(345, 625);
+            this.button1.Location = new System.Drawing.Point(336, 625);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(358, 47);
+            this.button1.Size = new System.Drawing.Size(369, 47);
             this.button1.TabIndex = 1;
             this.button1.Text = "Create Your Account";
             this.button1.UseVisualStyleBackColor = false;
@@ -76,7 +76,7 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(0, 1);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(991, 92);
+            this.panel1.Size = new System.Drawing.Size(993, 92);
             this.panel1.TabIndex = 3;
             // 
             // pictureBox1
@@ -210,7 +210,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(953, 731);
+            this.ClientSize = new System.Drawing.Size(955, 731);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.button3);
