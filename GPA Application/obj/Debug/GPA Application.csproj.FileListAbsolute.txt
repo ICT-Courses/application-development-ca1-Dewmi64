@@ -12,3 +12,17 @@ C:\Users\ASUS\source\repos\GPA Application\GPA Application\obj\Debug\GPA Applica
 C:\Users\ASUS\source\repos\GPA Application\GPA Application\obj\Debug\GPA Application.exe
 C:\Users\ASUS\source\repos\GPA Application\GPA Application\obj\Debug\GPA Application.pdb
 C:\Users\ASUS\source\repos\GPA Application\GPA Application\obj\Debug\GPA_Application.add_assignment.resources
+C:\Users\ASUS\source\repos\GPA Application\application-development-ca1-Dewmi64\GPA Application\bin\Debug\GPA Application.exe.config
+C:\Users\ASUS\source\repos\GPA Application\application-development-ca1-Dewmi64\GPA Application\bin\Debug\GPA Application.exe
+C:\Users\ASUS\source\repos\GPA Application\application-development-ca1-Dewmi64\GPA Application\bin\Debug\GPA Application.pdb
+C:\Users\ASUS\source\repos\GPA Application\application-development-ca1-Dewmi64\GPA Application\obj\Debug\GPA Application.csproj.AssemblyReference.cache
+C:\Users\ASUS\source\repos\GPA Application\application-development-ca1-Dewmi64\GPA Application\obj\Debug\GPA_Application.add_assignment.resources
+C:\Users\ASUS\source\repos\GPA Application\application-development-ca1-Dewmi64\GPA Application\obj\Debug\GPA_Application.create.resources
+C:\Users\ASUS\source\repos\GPA Application\application-development-ca1-Dewmi64\GPA Application\obj\Debug\GPA_Application.dashbord.resources
+C:\Users\ASUS\source\repos\GPA Application\application-development-ca1-Dewmi64\GPA Application\obj\Debug\GPA_Application.Home.resources
+C:\Users\ASUS\source\repos\GPA Application\application-development-ca1-Dewmi64\GPA Application\obj\Debug\GPA_Application.login.resources
+C:\Users\ASUS\source\repos\GPA Application\application-development-ca1-Dewmi64\GPA Application\obj\Debug\GPA_Application.Properties.Resources.resources
+C:\Users\ASUS\source\repos\GPA Application\application-development-ca1-Dewmi64\GPA Application\obj\Debug\GPA Application.csproj.GenerateResource.cache
+C:\Users\ASUS\source\repos\GPA Application\application-development-ca1-Dewmi64\GPA Application\obj\Debug\GPA Application.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\source\repos\GPA Application\application-development-ca1-Dewmi64\GPA Application\obj\Debug\GPA Application.exe
+C:\Users\ASUS\source\repos\GPA Application\application-development-ca1-Dewmi64\GPA Application\obj\Debug\GPA Application.pdb
