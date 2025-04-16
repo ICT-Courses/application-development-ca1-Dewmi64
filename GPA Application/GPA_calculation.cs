@@ -58,8 +58,39 @@ namespace GPA_Application
 
         private void button2_Click(object sender, EventArgs e)
         {
-            
-            
+            double totalGradePoints = 0;
+            double totalCredits = 0;
+
+            string connectionString = "server=localhost;user=root;database=grading_scale_database;password=Hwcs@1969;";
+
+            using (MySqlConnection con = new MySqlConnection(connectionString))
+            {
+                con.Open();
+
+                foreach (DataRow row in excelTable.Rows)
+                {
+                    string grade = row["Grade"].ToString();
+                    double credits = Convert.ToDouble(row["No of Credits"]);
+
+                    string query = "SELECT GPV FROM Grading_scale WHERE Grade = @grade";
+                    MySqlCommand cmd = new MySqlCommand(query, con);
+                    cmd.Parameters.AddWithValue("@grade", grade);
+
+                    object result = cmd.ExecuteScalar();
+
+                    if (result != null)
+                    {
+                        double gpv = Convert.ToDouble(result);
+                        totalGradePoints += gpv * credits;
+                        totalCredits += credits;
+                    }
+                }
+
+                con.Close();
+            }
+
+            double gpa = totalCredits > 0 ? totalGradePoints / totalCredits : 0;
+            richTextBox1.Text = "YOUR GPA IS: " + gpa.ToString("0.00");
         }
     }
     
