@@ -7,6 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
+using ExcelDataReader;
+using MySql.Data.MySqlClient;
 
 namespace GPA_Application
 {
@@ -17,12 +20,47 @@ namespace GPA_Application
             InitializeComponent();
         }
 
+        private DataTable excelTable;
         private void button1_Click(object sender, EventArgs e)
         {
-            if (openFileDialog1.ShowDialog() == DialogResult.OK) 
+            using (OpenFileDialog ofd = new OpenFileDialog() { Filter = "Excel Files|*.xls;*.xlsx" })
             {
-                MessageBox.Show(openFileDialog1.FileName);
+                if (ofd.ShowDialog() == DialogResult.OK)
+                {
+                    using (var stream = File.Open(ofd.FileName, FileMode.Open, FileAccess.Read))
+                    {
+                        using (var reader = ExcelReaderFactory.CreateReader(stream))
+                        {
+                            var conf = new ExcelDataSetConfiguration
+                            {
+                                ConfigureDataTable = _ => new ExcelDataTableConfiguration { UseHeaderRow = true }
+                            };
+
+                            var dataSet = reader.AsDataSet(conf);
+                            excelTable = dataSet.Tables[0];
+                            dataGridView1.DataSource = excelTable;
+                        }
+                    }
+                }
             }
+        
+        }
+
+        private void GPA_calculation_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            
+            
         }
     }
+    
 }
