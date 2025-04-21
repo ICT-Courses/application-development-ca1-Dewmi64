@@ -35,7 +35,7 @@
             // 
             this.flowLayoutPanel1.Location = new System.Drawing.Point(79, 55);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(613, 295);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(1000, 575);
             this.flowLayoutPanel1.TabIndex = 0;
             this.flowLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanel1_Paint);
             // 
@@ -43,7 +43,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1112, 682);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Name = "UpcomingAssignments";
             this.Text = "UpcomingAssignments";

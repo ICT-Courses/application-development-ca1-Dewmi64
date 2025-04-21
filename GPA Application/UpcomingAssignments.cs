@@ -55,7 +55,7 @@ namespace GPA_Application
                     Panel notePanel = new Panel
                     {
                         Width = 450, // Wider panel
-                        Height = 130,
+                        Height = 160,
                         BackColor = Color.SkyBlue, // Default color set to SkyBlue
                         Padding = new Padding(10),
                         Margin = new Padding(10),
@@ -98,10 +98,23 @@ namespace GPA_Application
                         AutoScroll = true
                     };
 
+                    Button btnMarkDone = new Button
+                    {
+                        Text = "Mark as Done",
+                        Size = new Size(120, 35),
+                        BackColor = Color.LightGreen,
+                        Font = new Font("Segoe UI", 9, FontStyle.Regular),
+                        Cursor = Cursors.Hand,
+                        Margin = new Padding(0, 5, 0, 0),
+                        
+                    };
+
+
                     // Add the labels to the flow panel
                     labelFlow.Controls.Add(lblSubject);
                     labelFlow.Controls.Add(lblDescription);
                     labelFlow.Controls.Add(lblDate);
+                    labelFlow.Controls.Add(btnMarkDone);
 
                     // Add the flow panel to the note panel
                     notePanel.Controls.Add(labelFlow);
