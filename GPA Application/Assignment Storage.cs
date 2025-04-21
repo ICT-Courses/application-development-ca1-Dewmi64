@@ -8,16 +8,15 @@ namespace GPA_Application
 {
     public class Assignment_Storage
     {
-        public List<Assignment_Details> Assignments { get; private set; }
+        internal static IEnumerable<object> assignments;
 
-        public Assignment_Storage()
-        {
-            Assignments = new List<Assignment_Details>();
-        }
+        public static List<Assignment_Details> Assignments { get; private set; } = new List<Assignment_Details>();
 
-        public void AddAssignment(Assignment_Details assignment)
+        public static void AddAssignment(Assignment_Details assignment)
         {
             Assignments.Add(assignment);
         }
     }
+
+
 }
