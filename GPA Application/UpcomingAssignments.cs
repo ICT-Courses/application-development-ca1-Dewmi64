@@ -98,23 +98,45 @@ namespace GPA_Application
                         AutoScroll = true
                     };
 
-                    Button btnMarkDone = new Button
+                    // Button to mark assignment as done
+                    Button btnEdit = new Button
                     {
+                        Text = "Edit",
+                        Size = new Size(120, 35),
+                        BackColor = Color.Orange,
+                        Font = new Font("Segoe UI", 9, FontStyle.Regular),
+                        Cursor = Cursors.Hand,
+                        Margin = new Padding(0, 5, 0, 0), // Adding margin to separate buttons
+                    };
+
+                    // Button to edit the assignment
+                     Button btnMarkDone = new Button
+                     {
                         Text = "Mark as Done",
                         Size = new Size(120, 35),
                         BackColor = Color.LightGreen,
                         Font = new Font("Segoe UI", 9, FontStyle.Regular),
                         Cursor = Cursors.Hand,
-                        Margin = new Padding(0, 5, 0, 0),
-                        
+                        Margin = new Padding(10, 5, 0, 0), // Increased margin between the buttons
                     };
 
+                    // Create a separate FlowLayoutPanel to hold the buttons and align them side by side
+                    FlowLayoutPanel buttonFlow = new FlowLayoutPanel
+                    {
+                        FlowDirection = FlowDirection.LeftToRight, // Align buttons horizontally
+                        AutoSize = true,
+                        Margin = new Padding(0, 5, 0, 0)
+                    };
 
-                    // Add the labels to the flow panel
+                    // Add buttons to the button flow panel
+                    buttonFlow.Controls.Add(btnMarkDone);
+                    buttonFlow.Controls.Add(btnEdit);
+
+                    // Add labels to the label flow panel
                     labelFlow.Controls.Add(lblSubject);
                     labelFlow.Controls.Add(lblDescription);
                     labelFlow.Controls.Add(lblDate);
-                    labelFlow.Controls.Add(btnMarkDone);
+                    labelFlow.Controls.Add(buttonFlow); // Add the button panel to the label flow panel
 
                     // Add the flow panel to the note panel
                     notePanel.Controls.Add(labelFlow);
@@ -161,7 +183,9 @@ namespace GPA_Application
 
         private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
         {
-            // Optional: Handle custom painting if needed
+            // You can handle painting logic here if needed
         }
     }
 }
+
+
