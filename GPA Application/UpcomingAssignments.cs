@@ -120,6 +120,19 @@ namespace GPA_Application
                         Margin = new Padding(10, 5, 0, 0), // Increased margin between the buttons
                     };
 
+                    btnEdit.Click += (s, e) =>
+                    {
+                        EditAssignment editForm = new EditAssignment(assignment);
+                       
+                        if (editForm.ShowDialog() == DialogResult.OK)
+                        {
+                            Assignment_Details updated = editForm.UpdatedAssignment; // Note: `UpdatedAssignment` is the correct property name
+                            AssignmentDatabaseHelper dbHelper = new AssignmentDatabaseHelper(); // Create instance
+                            dbHelper.UpdateAssignment(assignment, updated); // Call method
+                            LoadAssignments(); // Refresh view
+                        }
+                    };
+
                     // Create a separate FlowLayoutPanel to hold the buttons and align them side by side
                     FlowLayoutPanel buttonFlow = new FlowLayoutPanel
                     {
