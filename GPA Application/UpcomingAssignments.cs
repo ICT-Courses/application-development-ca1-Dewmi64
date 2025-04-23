@@ -123,7 +123,6 @@ namespace GPA_Application
                     btnEdit.Click += (s, e) =>
                     {
                         EditAssignment editForm = new EditAssignment(assignment);
-                       
                         if (editForm.ShowDialog() == DialogResult.OK)
                         {
                             Assignment_Details updated = editForm.UpdatedAssignment; // Note: `UpdatedAssignment` is the correct property name
@@ -132,6 +131,25 @@ namespace GPA_Application
                             LoadAssignments(); // Refresh view
                         }
                     };
+
+                    btnMarkDone.Text = "Mark as Done";
+                    btnMarkDone.Click += (s, e) =>
+                    {
+                        DialogResult result = MessageBox.Show(
+                            "Are you sure you want to mark this assignment as completed?",
+                            "Confirm Completion",
+                            MessageBoxButtons.YesNo,
+                            MessageBoxIcon.Question
+                        );
+
+                        if (result == DialogResult.Yes)
+                        {
+                            btnMarkDone.Text = "I'm Completed This Assignment ";
+                        }
+                        // If "No" is clicked, the button text remains "Mark as Done"
+                    };
+
+
 
                     // Create a separate FlowLayoutPanel to hold the buttons and align them side by side
                     FlowLayoutPanel buttonFlow = new FlowLayoutPanel
