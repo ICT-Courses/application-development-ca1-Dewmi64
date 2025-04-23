@@ -48,7 +48,7 @@ namespace GPA_Application
 
         private void GPA_calculation_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -58,6 +58,14 @@ namespace GPA_Application
 
         private void button2_Click(object sender, EventArgs e)
         {
+            string selectedSemester = comboBox1.SelectedItem?.ToString();
+
+            if (string.IsNullOrEmpty(selectedSemester))
+            {
+                MessageBox.Show("Please select a semester.");
+                return;
+            }
+
             double totalGradePoints = 0;
             double totalCredits = 0;
 
@@ -91,6 +99,12 @@ namespace GPA_Application
 
             double gpa = totalCredits > 0 ? totalGradePoints / totalCredits : 0;
             richTextBox1.Text = "YOUR GPA IS: " + gpa.ToString("0.00");
+
+            // Semester GPA -> richTextBox1
+            richTextBox1.Text = "YOUR SEMESTER GPA IS: " + gpa.ToString("0.00");
+
+            
+           
         }
     }
     

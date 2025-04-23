@@ -33,13 +33,15 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.button2 = new System.Windows.Forms.Button();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(331, 32);
+            this.button1.Location = new System.Drawing.Point(348, 127);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(198, 47);
             this.button1.TabIndex = 0;
@@ -54,7 +56,7 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(95, 100);
+            this.dataGridView1.Location = new System.Drawing.Point(95, 203);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
@@ -65,7 +67,7 @@
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(360, 323);
+            this.button2.Location = new System.Drawing.Point(619, 404);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(159, 43);
             this.button2.TabIndex = 2;
@@ -75,17 +77,53 @@
             // 
             // richTextBox1
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(295, 390);
+            this.richTextBox1.Location = new System.Drawing.Point(110, 488);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.Size = new System.Drawing.Size(298, 69);
             this.richTextBox1.TabIndex = 3;
             this.richTextBox1.Text = "";
             // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "1st Year 1st Semester",
+            "",
+            "1st Year 2nd Semester",
+            "",
+            "2nd Year 1st Semester",
+            "",
+            "2nd Year 2nd Semester",
+            "",
+            "3rd Year 1st Semester",
+            "",
+            "3rd Year 2nd Semester",
+            "",
+            "4th Year 1st Semester",
+            "",
+            "4th Year 2nd Semester"});
+            this.comboBox1.Location = new System.Drawing.Point(263, 38);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(213, 24);
+            this.comboBox1.TabIndex = 4;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(92, 38);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(156, 25);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "Select Semester";
+            // 
             // GPA_calculation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(868, 489);
+            this.ClientSize = new System.Drawing.Size(1042, 635);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.dataGridView1);
@@ -95,6 +133,7 @@
             this.Load += new System.EventHandler(this.GPA_calculation_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -105,5 +144,7 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label label1;
     }
 }
