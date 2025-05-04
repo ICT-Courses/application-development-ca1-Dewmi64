@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -33,6 +34,8 @@ namespace GPA_Application
             dataGridView1.Columns.Add("Marks_level", "Marks_level");
             dataGridView1.Columns.Add("GPV", "GPV");
 
+
+
             using (MySqlConnection conn = new MySqlConnection(connectionString))
             {
                 conn.Open();
@@ -56,7 +59,8 @@ namespace GPA_Application
 
         }
 
-        
+
+
         private void gradingscale_Load(object sender, EventArgs e)
         {
             dataGridView1.ColumnCount = 3;
@@ -88,58 +92,72 @@ namespace GPA_Application
             }
         }
 
-        private void button1_Click(object sender, EventArgs e)
+       
+        
+
+        private void button2_Click(object sender, EventArgs e)
         {
             
-                string connectionString = "server=localhost;user=root;database=grading_scale_database;password=Hwcs@1969;";
+        }
 
-                using (MySqlConnection conn = new MySqlConnection(connectionString))
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+             
+        
+
+            string connectionString = "server=localhost;user=root;database=grading_scale_database;password=Hwcs@1969;";
+            using (MySqlConnection conn = new MySqlConnection(connectionString))
+            {
+                conn.Open();
+
+                foreach (DataGridViewRow row in dataGridView1.Rows)
                 {
-                    conn.Open();
+                    if (row.IsNewRow) continue;
 
-                    foreach (DataGridViewRow row in dataGridView1.Rows)
+                    string Grade = row.Cells[0].Value?.ToString();
+                    int Marks_level = int.Parse(row.Cells[1].Value.ToString());
+                    double GPV = double.Parse(row.Cells[2].Value.ToString());
+
+                    // First check if this grade already exists
+                    string checkQuery = "SELECT COUNT(*) FROM Grading_scale WHERE Grade = @grade";
+                    MySqlCommand checkCmd = new MySqlCommand(checkQuery, conn);
+                    checkCmd.Parameters.AddWithValue("@grade", Grade);
+                    int count = Convert.ToInt32(checkCmd.ExecuteScalar());
+
+                    if (count > 0)
                     {
-                        if (row.IsNewRow) continue;
-
-                        string Grade = row.Cells[0].Value?.ToString();
-                        int Marks_level = int.Parse(row.Cells[1].Value.ToString());
-                        double GPV = double.Parse(row.Cells[2].Value.ToString());
-
-                        // First check if this grade already exists
-                        string checkQuery = "SELECT COUNT(*) FROM Grading_scale WHERE Grade = @grade";
-                        MySqlCommand checkCmd = new MySqlCommand(checkQuery, conn);
-                        checkCmd.Parameters.AddWithValue("@grade", Grade);
-                        int count = Convert.ToInt32(checkCmd.ExecuteScalar());
-
-                        if (count > 0)
-                        {
-                            // UPDATE existing
-                            string updateQuery = "UPDATE grading_scale SET Marks_level = @Marks_level, GPV = @gpv WHERE Grade = @grade";
-                            MySqlCommand updateCmd = new MySqlCommand(updateQuery, conn);
-                            updateCmd.Parameters.AddWithValue("@grade", Grade);
-                            updateCmd.Parameters.AddWithValue("@Marks_level", Marks_level);
-                            updateCmd.Parameters.AddWithValue("@GPV", GPV);
-                            updateCmd.ExecuteNonQuery();
-                        }
-                        else
-                        {
-                            // INSERT new
-                            string insertQuery = "INSERT INTO Grading_scale (Grade, Marks_level, GPV) VALUES (@grade, @Marks_level, @GPV)";
-                            MySqlCommand insertCmd = new MySqlCommand(insertQuery, conn);
-                            insertCmd.Parameters.AddWithValue("@grade", Grade);
-                            insertCmd.Parameters.AddWithValue("@Marks_level", Marks_level);
-                            insertCmd.Parameters.AddWithValue("@GPV", GPV);
-                            insertCmd.ExecuteNonQuery();
-                        }
+                        // UPDATE existing
+                        string updateQuery = "UPDATE grading_scale SET Marks_level = @Marks_level, GPV = @gpv WHERE Grade = @grade";
+                        MySqlCommand updateCmd = new MySqlCommand(updateQuery, conn);
+                        updateCmd.Parameters.AddWithValue("@grade", Grade);
+                        updateCmd.Parameters.AddWithValue("@Marks_level", Marks_level);
+                        updateCmd.Parameters.AddWithValue("@GPV", GPV);
+                        updateCmd.ExecuteNonQuery();
                     }
-
-                    MessageBox.Show("Grading scale updated successfully!");
+                    else
+                    {
+                        // INSERT new
+                        string insertQuery = "INSERT INTO Grading_scale (Grade, Marks_level, GPV) VALUES (@grade, @Marks_level, @GPV)";
+                        MySqlCommand insertCmd = new MySqlCommand(insertQuery, conn);
+                        insertCmd.Parameters.AddWithValue("@grade", Grade);
+                        insertCmd.Parameters.AddWithValue("@Marks_level", Marks_level);
+                        insertCmd.Parameters.AddWithValue("@GPV", GPV);
+                        insertCmd.ExecuteNonQuery();
+                    }
                 }
+
+                MessageBox.Show("Grading scale updated successfully!");
             }
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            GPA_calculationcs f2 = new GPA_calculationcs();
+            this.Hide();
+            f2.Show();
+        }
     }
 
 
-    
-}
 
-        
+}
