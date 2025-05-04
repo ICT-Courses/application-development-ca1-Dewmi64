@@ -177,7 +177,7 @@ namespace GPA_Application
 
         private void GPA_calculationcs_Load(object sender, EventArgs e)
         {
-
+            panel1.BackColor = Color.FromArgb(100, 0, 0, 0);
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -272,6 +272,12 @@ namespace GPA_Application
             }
         }
 
+        private void button6_Click(object sender, EventArgs e)
+        {
+            view_academic_performance f2 = new view_academic_performance();
+            this.Hide();
+            f2.Show();
+        }
     }
 }
 

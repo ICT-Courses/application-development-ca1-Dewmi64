@@ -91,6 +91,7 @@
             this.button1.TabIndex = 5;
             this.button1.Text = "GPA Calculation";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -149,6 +150,7 @@
             this.button5.TabIndex = 9;
             this.button5.Text = "Motivation To Keep Going";
             this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button6
             // 

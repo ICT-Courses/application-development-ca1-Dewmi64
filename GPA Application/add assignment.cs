@@ -66,14 +66,12 @@ namespace GPA_Application
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Assignment_managing f2 = new Assignment_managing();
-            f2.Show();
+            
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            UpcomingAssignments f2 = new UpcomingAssignments();
-            f2.Show();
+            
         }
     }
 }

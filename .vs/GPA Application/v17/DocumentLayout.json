@@ -3,40 +3,119 @@
   "WorkspaceRootPath": "C:\\Users\\ASUS\\source\\repos\\GPA Application\\application-development-ca1-Dewmi64\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C5511427-BA2B-47EE-B6C5-FB8172EDE651}|GPA Application\\GPA Application.csproj|c:\\users\\asus\\source\\repos\\gpa application\\application-development-ca1-dewmi64\\gpa application\\motivation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{C5511427-BA2B-47EE-B6C5-FB8172EDE651}|GPA Application\\GPA Application.csproj|solutionrelative:gpa application\\motivation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{C5511427-BA2B-47EE-B6C5-FB8172EDE651}|GPA Application\\GPA Application.csproj|c:\\users\\asus\\source\\repos\\gpa application\\application-development-ca1-dewmi64\\gpa application\\gpa_cal_home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C5511427-BA2B-47EE-B6C5-FB8172EDE651}|GPA Application\\GPA Application.csproj|solutionrelative:gpa application\\gpa_cal_home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C5511427-BA2B-47EE-B6C5-FB8172EDE651}|GPA Application\\GPA Application.csproj|C:\\Users\\ASUS\\source\\repos\\GPA Application\\application-development-ca1-Dewmi64\\gpa application\\add assignment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{C5511427-BA2B-47EE-B6C5-FB8172EDE651}|GPA Application\\GPA Application.csproj|solutionrelative:gpa application\\add assignment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C5511427-BA2B-47EE-B6C5-FB8172EDE651}|GPA Application\\GPA Application.csproj|C:\\Users\\ASUS\\source\\repos\\GPA Application\\application-development-ca1-Dewmi64\\gpa application\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{C5511427-BA2B-47EE-B6C5-FB8172EDE651}|GPA Application\\GPA Application.csproj|solutionrelative:gpa application\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{C5511427-BA2B-47EE-B6C5-FB8172EDE651}|GPA Application\\GPA Application.csproj|C:\\Users\\ASUS\\source\\repos\\GPA Application\\application-development-ca1-Dewmi64\\gpa application\\assignment_deadline_tracker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C5511427-BA2B-47EE-B6C5-FB8172EDE651}|GPA Application\\GPA Application.csproj|solutionrelative:gpa application\\assignment_deadline_tracker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C5511427-BA2B-47EE-B6C5-FB8172EDE651}|GPA Application\\GPA Application.csproj|c:\\users\\asus\\source\\repos\\gpa application\\application-development-ca1-dewmi64\\gpa application\\dashbord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{C5511427-BA2B-47EE-B6C5-FB8172EDE651}|GPA Application\\GPA Application.csproj|solutionrelative:gpa application\\dashbord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{C5511427-BA2B-47EE-B6C5-FB8172EDE651}|GPA Application\\GPA Application.csproj|c:\\users\\asus\\source\\repos\\gpa application\\application-development-ca1-dewmi64\\gpa application\\weak_area_tracker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C5511427-BA2B-47EE-B6C5-FB8172EDE651}|GPA Application\\GPA Application.csproj|solutionrelative:gpa application\\weak_area_tracker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5511427-BA2B-47EE-B6C5-FB8172EDE651}|GPA Application\\GPA Application.csproj|C:\\Users\\ASUS\\source\\repos\\GPA Application\\application-development-ca1-Dewmi64\\gpa application\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5511427-BA2B-47EE-B6C5-FB8172EDE651}|GPA Application\\GPA Application.csproj|solutionrelative:gpa application\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C5511427-BA2B-47EE-B6C5-FB8172EDE651}|GPA Application\\GPA Application.csproj|C:\\Users\\ASUS\\source\\repos\\GPA Application\\application-development-ca1-Dewmi64\\gpa application\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{C5511427-BA2B-47EE-B6C5-FB8172EDE651}|GPA Application\\GPA Application.csproj|solutionrelative:gpa application\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C5511427-BA2B-47EE-B6C5-FB8172EDE651}|GPA Application\\GPA Application.csproj|C:\\Users\\ASUS\\source\\repos\\GPA Application\\application-development-ca1-Dewmi64\\gpa application\\create.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{C5511427-BA2B-47EE-B6C5-FB8172EDE651}|GPA Application\\GPA Application.csproj|solutionrelative:gpa application\\create.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{C5511427-BA2B-47EE-B6C5-FB8172EDE651}|GPA Application\\GPA Application.csproj|c:\\users\\asus\\source\\repos\\gpa application\\application-development-ca1-dewmi64\\gpa application\\weak_area_tracker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5511427-BA2B-47EE-B6C5-FB8172EDE651}|GPA Application\\GPA Application.csproj|solutionrelative:gpa application\\weak_area_tracker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5511427-BA2B-47EE-B6C5-FB8172EDE651}|GPA Application\\GPA Application.csproj|C:\\Users\\ASUS\\source\\repos\\GPA Application\\application-development-ca1-Dewmi64\\gpa application\\gpa_predictor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C5511427-BA2B-47EE-B6C5-FB8172EDE651}|GPA Application\\GPA Application.csproj|solutionrelative:gpa application\\gpa_predictor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5511427-BA2B-47EE-B6C5-FB8172EDE651}|GPA Application\\GPA Application.csproj|C:\\Users\\ASUS\\source\\repos\\GPA Application\\application-development-ca1-Dewmi64\\gpa application\\gpa_calculationcs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C5511427-BA2B-47EE-B6C5-FB8172EDE651}|GPA Application\\GPA Application.csproj|solutionrelative:gpa application\\gpa_calculationcs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5511427-BA2B-47EE-B6C5-FB8172EDE651}|GPA Application\\GPA Application.csproj|C:\\Users\\ASUS\\source\\repos\\GPA Application\\application-development-ca1-Dewmi64\\gpa application\\gpa_calculationcs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5511427-BA2B-47EE-B6C5-FB8172EDE651}|GPA Application\\GPA Application.csproj|solutionrelative:gpa application\\gpa_calculationcs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5511427-BA2B-47EE-B6C5-FB8172EDE651}|GPA Application\\GPA Application.csproj|C:\\Users\\ASUS\\source\\repos\\GPA Application\\application-development-ca1-Dewmi64\\gpa application\\gradingscale.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C5511427-BA2B-47EE-B6C5-FB8172EDE651}|GPA Application\\GPA Application.csproj|solutionrelative:gpa application\\gradingscale.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5511427-BA2B-47EE-B6C5-FB8172EDE651}|GPA Application\\GPA Application.csproj|C:\\Users\\ASUS\\source\\repos\\GPA Application\\application-development-ca1-Dewmi64\\gpa application\\gradingscale.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5511427-BA2B-47EE-B6C5-FB8172EDE651}|GPA Application\\GPA Application.csproj|solutionrelative:gpa application\\gradingscale.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5511427-BA2B-47EE-B6C5-FB8172EDE651}|GPA Application\\GPA Application.csproj|C:\\Users\\ASUS\\source\\repos\\GPA Application\\application-development-ca1-Dewmi64\\gpa application\\view_academic_performance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C5511427-BA2B-47EE-B6C5-FB8172EDE651}|GPA Application\\GPA Application.csproj|solutionrelative:gpa application\\view_academic_performance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C5511427-BA2B-47EE-B6C5-FB8172EDE651}|GPA Application\\GPA Application.csproj|C:\\Users\\ASUS\\source\\repos\\GPA Application\\application-development-ca1-Dewmi64\\gpa application\\create.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C5511427-BA2B-47EE-B6C5-FB8172EDE651}|GPA Application\\GPA Application.csproj|solutionrelative:gpa application\\create.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{C5511427-BA2B-47EE-B6C5-FB8172EDE651}|GPA Application\\GPA Application.csproj|C:\\Users\\ASUS\\source\\repos\\GPA Application\\application-development-ca1-Dewmi64\\gpa application\\create.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C5511427-BA2B-47EE-B6C5-FB8172EDE651}|GPA Application\\GPA Application.csproj|solutionrelative:gpa application\\create.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{C5511427-BA2B-47EE-B6C5-FB8172EDE651}|GPA Application\\GPA Application.csproj|C:\\Users\\ASUS\\source\\repos\\GPA Application\\application-development-ca1-Dewmi64\\gpa application\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C5511427-BA2B-47EE-B6C5-FB8172EDE651}|GPA Application\\GPA Application.csproj|solutionrelative:gpa application\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{C5511427-BA2B-47EE-B6C5-FB8172EDE651}|GPA Application\\GPA Application.csproj|C:\\Users\\ASUS\\source\\repos\\GPA Application\\application-development-ca1-Dewmi64\\gpa application\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C5511427-BA2B-47EE-B6C5-FB8172EDE651}|GPA Application\\GPA Application.csproj|solutionrelative:gpa application\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5511427-BA2B-47EE-B6C5-FB8172EDE651}|GPA Application\\GPA Application.csproj|C:\\Users\\ASUS\\source\\repos\\GPA Application\\application-development-ca1-Dewmi64\\gpa application\\dashbord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5511427-BA2B-47EE-B6C5-FB8172EDE651}|GPA Application\\GPA Application.csproj|solutionrelative:gpa application\\dashbord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5511427-BA2B-47EE-B6C5-FB8172EDE651}|GPA Application\\GPA Application.csproj|C:\\Users\\ASUS\\source\\repos\\GPA Application\\application-development-ca1-Dewmi64\\gpa application\\dashbord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C5511427-BA2B-47EE-B6C5-FB8172EDE651}|GPA Application\\GPA Application.csproj|solutionrelative:gpa application\\dashbord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5511427-BA2B-47EE-B6C5-FB8172EDE651}|GPA Application\\GPA Application.csproj|c:\\users\\asus\\source\\repos\\gpa application\\application-development-ca1-dewmi64\\gpa application\\gpa_cal_home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5511427-BA2B-47EE-B6C5-FB8172EDE651}|GPA Application\\GPA Application.csproj|solutionrelative:gpa application\\gpa_cal_home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{C5511427-BA2B-47EE-B6C5-FB8172EDE651}|GPA Application\\GPA Application.csproj|C:\\Users\\ASUS\\source\\repos\\GPA Application\\application-development-ca1-Dewmi64\\gpa application\\add assignment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C5511427-BA2B-47EE-B6C5-FB8172EDE651}|GPA Application\\GPA Application.csproj|solutionrelative:gpa application\\add assignment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5511427-BA2B-47EE-B6C5-FB8172EDE651}|GPA Application\\GPA Application.csproj|C:\\Users\\ASUS\\source\\repos\\GPA Application\\application-development-ca1-Dewmi64\\gpa application\\view_academic_performance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5511427-BA2B-47EE-B6C5-FB8172EDE651}|GPA Application\\GPA Application.csproj|solutionrelative:gpa application\\view_academic_performance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5511427-BA2B-47EE-B6C5-FB8172EDE651}|GPA Application\\GPA Application.csproj|c:\\users\\asus\\source\\repos\\gpa application\\application-development-ca1-dewmi64\\gpa application\\assignment_deadline_tracker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5511427-BA2B-47EE-B6C5-FB8172EDE651}|GPA Application\\GPA Application.csproj|solutionrelative:gpa application\\assignment_deadline_tracker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5511427-BA2B-47EE-B6C5-FB8172EDE651}|GPA Application\\GPA Application.csproj|c:\\users\\asus\\source\\repos\\gpa application\\application-development-ca1-dewmi64\\gpa application\\view_predictions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5511427-BA2B-47EE-B6C5-FB8172EDE651}|GPA Application\\GPA Application.csproj|solutionrelative:gpa application\\view_predictions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5511427-BA2B-47EE-B6C5-FB8172EDE651}|GPA Application\\GPA Application.csproj|C:\\Users\\ASUS\\source\\repos\\GPA Application\\application-development-ca1-Dewmi64\\gpa application\\view_predictions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C5511427-BA2B-47EE-B6C5-FB8172EDE651}|GPA Application\\GPA Application.csproj|solutionrelative:gpa application\\view_predictions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5511427-BA2B-47EE-B6C5-FB8172EDE651}|GPA Application\\GPA Application.csproj|C:\\Users\\ASUS\\source\\repos\\GPA Application\\application-development-ca1-Dewmi64\\gpa application\\gpa_predictor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5511427-BA2B-47EE-B6C5-FB8172EDE651}|GPA Application\\GPA Application.csproj|solutionrelative:gpa application\\gpa_predictor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|GPA Application||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5511427-BA2B-47EE-B6C5-FB8172EDE651}|GPA Application\\GPA Application.csproj|C:\\Users\\ASUS\\source\\repos\\GPA Application\\application-development-ca1-Dewmi64\\gpa application\\gradingscale.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5511427-BA2B-47EE-B6C5-FB8172EDE651}|GPA Application\\GPA Application.csproj|solutionrelative:gpa application\\gradingscale.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5511427-BA2B-47EE-B6C5-FB8172EDE651}|GPA Application\\GPA Application.csproj|C:\\Users\\ASUS\\source\\repos\\GPA Application\\application-development-ca1-Dewmi64\\gpa application\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5511427-BA2B-47EE-B6C5-FB8172EDE651}|GPA Application\\GPA Application.csproj|solutionrelative:gpa application\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C5511427-BA2B-47EE-B6C5-FB8172EDE651}|GPA Application\\GPA Application.csproj|C:\\Users\\ASUS\\source\\repos\\GPA Application\\application-development-ca1-Dewmi64\\gpa application\\assignment details.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -47,19 +126,8 @@
       "RelativeMoniker": "D:0:0:{C5511427-BA2B-47EE-B6C5-FB8172EDE651}|GPA Application\\GPA Application.csproj|solutionrelative:gpa application\\assignment storage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C5511427-BA2B-47EE-B6C5-FB8172EDE651}|GPA Application\\GPA Application.csproj|C:\\Users\\ASUS\\source\\repos\\GPA Application\\application-development-ca1-Dewmi64\\gpa application\\dashbord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C5511427-BA2B-47EE-B6C5-FB8172EDE651}|GPA Application\\GPA Application.csproj|solutionrelative:gpa application\\dashbord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ASUS\\source\\repos\\GPA Application\\application-development-ca1-Dewmi64\\GPA Application\\Assignment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:GPA Application\\Assignment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C5511427-BA2B-47EE-B6C5-FB8172EDE651}|GPA Application\\GPA Application.csproj|C:\\Users\\ASUS\\source\\repos\\GPA Application\\application-development-ca1-Dewmi64\\gpa application\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C5511427-BA2B-47EE-B6C5-FB8172EDE651}|GPA Application\\GPA Application.csproj|solutionrelative:gpa application\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|GPA Application||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C5511427-BA2B-47EE-B6C5-FB8172EDE651}|GPA Application\\GPA Application.csproj|C:\\Users\\ASUS\\source\\repos\\GPA Application\\application-development-ca1-Dewmi64\\gpa application\\usercredential.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -68,10 +136,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{C5511427-BA2B-47EE-B6C5-FB8172EDE651}|GPA Application\\GPA Application.csproj|C:\\Users\\ASUS\\source\\repos\\GPA Application\\application-development-ca1-Dewmi64\\gpa application\\create.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C5511427-BA2B-47EE-B6C5-FB8172EDE651}|GPA Application\\GPA Application.csproj|solutionrelative:gpa application\\create.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C5511427-BA2B-47EE-B6C5-FB8172EDE651}|GPA Application\\GPA Application.csproj|C:\\Users\\ASUS\\source\\repos\\GPA Application\\application-development-ca1-Dewmi64\\gpa application\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C5511427-BA2B-47EE-B6C5-FB8172EDE651}|GPA Application\\GPA Application.csproj|solutionrelative:gpa application\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ASUS\\source\\repos\\GPA Application\\GPA Application\\Dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -84,54 +148,15 @@
       "DocumentGroups": [
         {
           "DockedHeight": 292,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 7,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Motivation.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\GPA Application\\application-development-ca1-Dewmi64\\GPA Application\\Motivation.cs",
-              "RelativeDocumentMoniker": "GPA Application\\Motivation.cs",
-              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\GPA Application\\application-development-ca1-Dewmi64\\GPA Application\\Motivation.cs [Design]",
-              "RelativeToolTip": "GPA Application\\Motivation.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-11T17:06:26.6Z",
-              "EditorCaption": " [Design]"
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{74946827-37a0-11d2-a273-00c04f8ef4ff}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "login.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\GPA Application\\application-development-ca1-Dewmi64\\GPA Application\\login.cs",
-              "RelativeDocumentMoniker": "GPA Application\\login.cs",
-              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\GPA Application\\application-development-ca1-Dewmi64\\GPA Application\\login.cs [Design]",
-              "RelativeToolTip": "GPA Application\\login.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-01T08:10:17.535Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "Dashboard.cs",
-              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\GPA Application\\GPA Application\\Dashboard.cs",
-              "RelativeDocumentMoniker": "..\\GPA Application\\Dashboard.cs",
-              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\GPA Application\\GPA Application\\Dashboard.cs",
-              "RelativeToolTip": "..\\GPA Application\\Dashboard.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAADgvw8AAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-06T07:16:36.461Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "dashbord.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\GPA Application\\application-development-ca1-Dewmi64\\GPA Application\\dashbord.cs",
-              "RelativeDocumentMoniker": "GPA Application\\dashbord.cs",
-              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\GPA Application\\application-development-ca1-Dewmi64\\GPA Application\\dashbord.cs [Design]",
-              "RelativeToolTip": "GPA Application\\dashbord.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-06T11:59:47.672Z",
-              "EditorCaption": " [Design]"
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
             },
             {
               "$type": "Document",
@@ -146,8 +171,231 @@
               "EditorCaption": " [Design]"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Weak_Area_Tracker.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\GPA Application\\application-development-ca1-Dewmi64\\GPA Application\\Weak_Area_Tracker.cs",
+              "RelativeDocumentMoniker": "GPA Application\\Weak_Area_Tracker.cs",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\GPA Application\\application-development-ca1-Dewmi64\\GPA Application\\Weak_Area_Tracker.cs [Design]",
+              "RelativeToolTip": "GPA Application\\Weak_Area_Tracker.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T14:06:10.609Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\GPA Application\\application-development-ca1-Dewmi64\\GPA Application\\Program.cs",
+              "RelativeDocumentMoniker": "GPA Application\\Program.cs",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\GPA Application\\application-development-ca1-Dewmi64\\GPA Application\\Program.cs",
+              "RelativeToolTip": "GPA Application\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-02T08:36:23.395Z",
+              "EditorCaption": ""
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "Assignment_Deadline_Tracker.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\GPA Application\\application-development-ca1-Dewmi64\\GPA Application\\Assignment_Deadline_Tracker.cs",
+              "RelativeDocumentMoniker": "GPA Application\\Assignment_Deadline_Tracker.cs",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\GPA Application\\application-development-ca1-Dewmi64\\GPA Application\\Assignment_Deadline_Tracker.cs [Design]",
+              "RelativeToolTip": "GPA Application\\Assignment_Deadline_Tracker.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T13:02:08.018Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "GPA_Cal_Home.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\GPA Application\\application-development-ca1-Dewmi64\\GPA Application\\GPA_Cal_Home.cs",
+              "RelativeDocumentMoniker": "GPA Application\\GPA_Cal_Home.cs",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\GPA Application\\application-development-ca1-Dewmi64\\GPA Application\\GPA_Cal_Home.cs [Design]",
+              "RelativeToolTip": "GPA Application\\GPA_Cal_Home.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T14:09:13.515Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "login.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\GPA Application\\application-development-ca1-Dewmi64\\GPA Application\\login.cs",
+              "RelativeDocumentMoniker": "GPA Application\\login.cs",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\GPA Application\\application-development-ca1-Dewmi64\\GPA Application\\login.cs [Design]",
+              "RelativeToolTip": "GPA Application\\login.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-01T08:10:17.535Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Weak_Area_Tracker.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\GPA Application\\application-development-ca1-Dewmi64\\GPA Application\\Weak_Area_Tracker.cs",
+              "RelativeDocumentMoniker": "GPA Application\\Weak_Area_Tracker.cs",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\GPA Application\\application-development-ca1-Dewmi64\\GPA Application\\Weak_Area_Tracker.cs",
+              "RelativeToolTip": "GPA Application\\Weak_Area_Tracker.cs",
+              "ViewState": "AgIAAEYAAAAAAAAAAAAQwGIAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T14:07:10.118Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "GPA_Predictor.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\GPA Application\\application-development-ca1-Dewmi64\\GPA Application\\GPA_Predictor.cs",
+              "RelativeDocumentMoniker": "GPA Application\\GPA_Predictor.cs",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\GPA Application\\application-development-ca1-Dewmi64\\GPA Application\\GPA_Predictor.cs [Design]",
+              "RelativeToolTip": "GPA Application\\GPA_Predictor.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T11:42:03.172Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "login.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\GPA Application\\application-development-ca1-Dewmi64\\GPA Application\\login.cs",
+              "RelativeDocumentMoniker": "GPA Application\\login.cs",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\GPA Application\\application-development-ca1-Dewmi64\\GPA Application\\login.cs",
+              "RelativeToolTip": "GPA Application\\login.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAYwEQAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-01T11:47:59.195Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "GPA_calculationcs.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\GPA Application\\application-development-ca1-Dewmi64\\GPA Application\\GPA_calculationcs.cs",
+              "RelativeDocumentMoniker": "GPA Application\\GPA_calculationcs.cs",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\GPA Application\\application-development-ca1-Dewmi64\\GPA Application\\GPA_calculationcs.cs",
+              "RelativeToolTip": "GPA Application\\GPA_calculationcs.cs",
+              "ViewState": "AgIAAJkAAAAAAAAAAAAcwLQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T09:33:44.433Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "dashbord.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\GPA Application\\application-development-ca1-Dewmi64\\GPA Application\\dashbord.cs",
+              "RelativeDocumentMoniker": "GPA Application\\dashbord.cs",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\GPA Application\\application-development-ca1-Dewmi64\\GPA Application\\dashbord.cs [Design]",
+              "RelativeToolTip": "GPA Application\\dashbord.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T11:59:47.672Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "GPA_calculationcs.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\GPA Application\\application-development-ca1-Dewmi64\\GPA Application\\GPA_calculationcs.cs",
+              "RelativeDocumentMoniker": "GPA Application\\GPA_calculationcs.cs",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\GPA Application\\application-development-ca1-Dewmi64\\GPA Application\\GPA_calculationcs.cs [Design]",
+              "RelativeToolTip": "GPA Application\\GPA_calculationcs.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T09:31:11.568Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "gradingscale.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\GPA Application\\application-development-ca1-Dewmi64\\GPA Application\\gradingscale.cs",
+              "RelativeDocumentMoniker": "GPA Application\\gradingscale.cs",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\GPA Application\\application-development-ca1-Dewmi64\\GPA Application\\gradingscale.cs",
+              "RelativeToolTip": "GPA Application\\gradingscale.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAAwDsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T09:15:12.79Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "gradingscale.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\GPA Application\\application-development-ca1-Dewmi64\\GPA Application\\gradingscale.cs",
+              "RelativeDocumentMoniker": "GPA Application\\gradingscale.cs",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\GPA Application\\application-development-ca1-Dewmi64\\GPA Application\\gradingscale.cs [Design]",
+              "RelativeToolTip": "GPA Application\\gradingscale.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T09:05:39.789Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "view_academic_performance.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\GPA Application\\application-development-ca1-Dewmi64\\GPA Application\\view_academic_performance.cs",
+              "RelativeDocumentMoniker": "GPA Application\\view_academic_performance.cs",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\GPA Application\\application-development-ca1-Dewmi64\\GPA Application\\view_academic_performance.cs [Design]",
+              "RelativeToolTip": "GPA Application\\view_academic_performance.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T11:26:06.436Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "create.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\GPA Application\\application-development-ca1-Dewmi64\\GPA Application\\create.cs",
+              "RelativeDocumentMoniker": "GPA Application\\create.cs",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\GPA Application\\application-development-ca1-Dewmi64\\GPA Application\\create.cs [Design]",
+              "RelativeToolTip": "GPA Application\\create.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-01T08:09:33.758Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "create.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\GPA Application\\application-development-ca1-Dewmi64\\GPA Application\\create.cs",
+              "RelativeDocumentMoniker": "GPA Application\\create.cs",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\GPA Application\\application-development-ca1-Dewmi64\\GPA Application\\create.cs",
+              "RelativeToolTip": "GPA Application\\create.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAuwEQAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-01T08:13:49.98Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "dashbord.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\GPA Application\\application-development-ca1-Dewmi64\\GPA Application\\dashbord.cs",
+              "RelativeDocumentMoniker": "GPA Application\\dashbord.cs",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\GPA Application\\application-development-ca1-Dewmi64\\GPA Application\\dashbord.cs",
+              "RelativeToolTip": "GPA Application\\dashbord.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAYwCEAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T12:00:28.531Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
               "Title": "Home.cs [Design]",
               "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\GPA Application\\application-development-ca1-Dewmi64\\GPA Application\\Home.cs",
               "RelativeDocumentMoniker": "GPA Application\\Home.cs",
@@ -158,20 +406,145 @@
               "EditorCaption": " [Design]"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "GPA_Cal_Home.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\GPA Application\\application-development-ca1-Dewmi64\\GPA Application\\GPA_Cal_Home.cs",
+              "RelativeDocumentMoniker": "GPA Application\\GPA_Cal_Home.cs",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\GPA Application\\application-development-ca1-Dewmi64\\GPA Application\\GPA_Cal_Home.cs",
+              "RelativeToolTip": "GPA Application\\GPA_Cal_Home.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAAAB4AAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T14:10:16.072Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 20,
+              "Title": "add assignment.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\GPA Application\\application-development-ca1-Dewmi64\\GPA Application\\add assignment.cs",
+              "RelativeDocumentMoniker": "GPA Application\\add assignment.cs",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\GPA Application\\application-development-ca1-Dewmi64\\GPA Application\\add assignment.cs",
+              "RelativeToolTip": "GPA Application\\add assignment.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAAACwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T19:13:28.985Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "view_academic_performance.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\GPA Application\\application-development-ca1-Dewmi64\\GPA Application\\view_academic_performance.cs",
+              "RelativeDocumentMoniker": "GPA Application\\view_academic_performance.cs",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\GPA Application\\application-development-ca1-Dewmi64\\GPA Application\\view_academic_performance.cs",
+              "RelativeToolTip": "GPA Application\\view_academic_performance.cs",
+              "ViewState": "AgIAAFAAAAAAAAAAAAAwwCQAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T11:26:41.361Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Assignment_Deadline_Tracker.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\GPA Application\\application-development-ca1-Dewmi64\\GPA Application\\Assignment_Deadline_Tracker.cs",
+              "RelativeDocumentMoniker": "GPA Application\\Assignment_Deadline_Tracker.cs",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\GPA Application\\application-development-ca1-Dewmi64\\GPA Application\\Assignment_Deadline_Tracker.cs",
+              "RelativeToolTip": "GPA Application\\Assignment_Deadline_Tracker.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T13:17:11.864Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "view_predictions.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\GPA Application\\application-development-ca1-Dewmi64\\GPA Application\\view_predictions.cs",
+              "RelativeDocumentMoniker": "GPA Application\\view_predictions.cs",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\GPA Application\\application-development-ca1-Dewmi64\\GPA Application\\view_predictions.cs",
+              "RelativeToolTip": "GPA Application\\view_predictions.cs",
+              "ViewState": "AgIAALoAAAAAAAAAAAAkwL4AAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T12:17:05.682Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "view_predictions.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\GPA Application\\application-development-ca1-Dewmi64\\GPA Application\\view_predictions.cs",
+              "RelativeDocumentMoniker": "GPA Application\\view_predictions.cs",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\GPA Application\\application-development-ca1-Dewmi64\\GPA Application\\view_predictions.cs [Design]",
+              "RelativeToolTip": "GPA Application\\view_predictions.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T12:14:42.139Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "GPA_Predictor.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\GPA Application\\application-development-ca1-Dewmi64\\GPA Application\\GPA_Predictor.cs",
+              "RelativeDocumentMoniker": "GPA Application\\GPA_Predictor.cs",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\GPA Application\\application-development-ca1-Dewmi64\\GPA Application\\GPA_Predictor.cs",
+              "RelativeToolTip": "GPA Application\\GPA_Predictor.cs",
+              "ViewState": "AgIAAJUAAAAAAAAAAAAcwLUAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T11:50:09.282Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "gradingscale.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\GPA Application\\application-development-ca1-Dewmi64\\GPA Application\\gradingscale.Designer.cs",
+              "RelativeDocumentMoniker": "GPA Application\\gradingscale.Designer.cs",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\GPA Application\\application-development-ca1-Dewmi64\\GPA Application\\gradingscale.Designer.cs",
+              "RelativeToolTip": "GPA Application\\gradingscale.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T09:05:52.354Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "Dashboard.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\GPA Application\\GPA Application\\Dashboard.cs",
+              "RelativeDocumentMoniker": "..\\GPA Application\\Dashboard.cs",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\GPA Application\\GPA Application\\Dashboard.cs",
+              "RelativeToolTip": "..\\GPA Application\\Dashboard.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T07:16:36.461Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "GPA Application",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\GPA Application\\application-development-ca1-Dewmi64\\GPA Application\\GPA Application.csproj",
+              "RelativeDocumentMoniker": "GPA Application\\GPA Application.csproj",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\GPA Application\\application-development-ca1-Dewmi64\\GPA Application\\GPA Application.csproj",
+              "RelativeToolTip": "GPA Application\\GPA Application.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-03-06T17:05:14.629Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Home.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\GPA Application\\application-development-ca1-Dewmi64\\GPA Application\\Home.cs",
+              "RelativeDocumentMoniker": "GPA Application\\Home.cs",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\GPA Application\\application-development-ca1-Dewmi64\\GPA Application\\Home.cs",
+              "RelativeToolTip": "GPA Application\\Home.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAuwDMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-01T08:10:38.537Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
               "Title": "Assignment Storage.cs",
               "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\GPA Application\\application-development-ca1-Dewmi64\\GPA Application\\Assignment Storage.cs",
               "RelativeDocumentMoniker": "GPA Application\\Assignment Storage.cs",
@@ -183,55 +556,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "create.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\GPA Application\\application-development-ca1-Dewmi64\\GPA Application\\create.cs",
-              "RelativeDocumentMoniker": "GPA Application\\create.cs",
-              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\GPA Application\\application-development-ca1-Dewmi64\\GPA Application\\create.cs [Design]",
-              "RelativeToolTip": "GPA Application\\create.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-01T08:09:33.758Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "login.cs",
-              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\GPA Application\\application-development-ca1-Dewmi64\\GPA Application\\login.cs",
-              "RelativeDocumentMoniker": "GPA Application\\login.cs",
-              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\GPA Application\\application-development-ca1-Dewmi64\\GPA Application\\login.cs",
-              "RelativeToolTip": "GPA Application\\login.cs",
-              "ViewState": "AgIAAD0AAAAAAAAAAAAewFAAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-01T11:47:59.195Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "create.cs",
-              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\GPA Application\\application-development-ca1-Dewmi64\\GPA Application\\create.cs",
-              "RelativeDocumentMoniker": "GPA Application\\create.cs",
-              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\GPA Application\\application-development-ca1-Dewmi64\\GPA Application\\create.cs",
-              "RelativeToolTip": "GPA Application\\create.cs",
-              "ViewState": "AgIAACEAAAAAAAAAAAArwDcAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-01T08:13:49.98Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "add assignment.cs",
-              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\GPA Application\\application-development-ca1-Dewmi64\\GPA Application\\add assignment.cs",
-              "RelativeDocumentMoniker": "GPA Application\\add assignment.cs",
-              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\GPA Application\\application-development-ca1-Dewmi64\\GPA Application\\add assignment.cs",
-              "RelativeToolTip": "GPA Application\\add assignment.cs",
-              "ViewState": "AgIAACUAAAAAAAAAAAArwDsAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-06T19:13:28.985Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 29,
               "Title": "Assignment Details.cs",
               "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\GPA Application\\application-development-ca1-Dewmi64\\GPA Application\\Assignment Details.cs",
               "RelativeDocumentMoniker": "GPA Application\\Assignment Details.cs",
@@ -243,53 +568,18 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "dashbord.cs",
-              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\GPA Application\\application-development-ca1-Dewmi64\\GPA Application\\dashbord.cs",
-              "RelativeDocumentMoniker": "GPA Application\\dashbord.cs",
-              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\GPA Application\\application-development-ca1-Dewmi64\\GPA Application\\dashbord.cs",
-              "RelativeToolTip": "GPA Application\\dashbord.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAWwBsAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-06T12:00:28.531Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 31,
               "Title": "Assignment.cs [Design]",
               "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\GPA Application\\application-development-ca1-Dewmi64\\GPA Application\\Assignment.cs",
               "RelativeDocumentMoniker": "GPA Application\\Assignment.cs",
-              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\GPA Application\\GPA Application\\Assignment.cs [Design]",
-              "RelativeToolTip": "..\\GPA Application\\Assignment.cs [Design]",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\GPA Application\\application-development-ca1-Dewmi64\\GPA Application\\Assignment.cs [Design]",
+              "RelativeToolTip": "GPA Application\\Assignment.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-06T18:22:56.212Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\GPA Application\\application-development-ca1-Dewmi64\\GPA Application\\Program.cs",
-              "RelativeDocumentMoniker": "GPA Application\\Program.cs",
-              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\GPA Application\\application-development-ca1-Dewmi64\\GPA Application\\Program.cs",
-              "RelativeToolTip": "GPA Application\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-02T08:36:23.395Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "GPA Application",
-              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\GPA Application\\application-development-ca1-Dewmi64\\GPA Application\\GPA Application.csproj",
-              "RelativeDocumentMoniker": "GPA Application\\GPA Application.csproj",
-              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\GPA Application\\application-development-ca1-Dewmi64\\GPA Application\\GPA Application.csproj",
-              "RelativeToolTip": "GPA Application\\GPA Application.csproj",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-03-06T17:05:14.629Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 32,
               "Title": "UserCredential.cs",
               "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\GPA Application\\application-development-ca1-Dewmi64\\GPA Application\\UserCredential.cs",
               "RelativeDocumentMoniker": "GPA Application\\UserCredential.cs",
@@ -301,7 +591,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 33,
               "Title": "create.Designer.cs",
               "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\GPA Application\\application-development-ca1-Dewmi64\\GPA Application\\create.Designer.cs",
               "RelativeDocumentMoniker": "GPA Application\\create.Designer.cs",
@@ -309,19 +599,7 @@
               "RelativeToolTip": "GPA Application\\create.Designer.cs",
               "ViewState": "AgIAAEMAAAAAAAAAAAApwFAAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-01T08:59:29.229Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "Home.cs",
-              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\GPA Application\\application-development-ca1-Dewmi64\\GPA Application\\Home.cs",
-              "RelativeDocumentMoniker": "GPA Application\\Home.cs",
-              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\GPA Application\\application-development-ca1-Dewmi64\\GPA Application\\Home.cs",
-              "RelativeToolTip": "GPA Application\\Home.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAIA9wC4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-01T08:10:38.537Z",
+              "WhenOpened": "2025-03-01T08:59:29.229Z",
               "EditorCaption": ""
             }
           ]

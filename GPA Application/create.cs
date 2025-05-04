@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Drawing;
 using System.Text.RegularExpressions;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
@@ -65,7 +66,7 @@ namespace GPA_Application
 
         private void create_Load(object sender, EventArgs e)
         {
-            
+            panel1.BackColor = Color.FromArgb(100, 0, 0, 0);
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
@@ -122,6 +123,11 @@ namespace GPA_Application
             create f2 = new create();
             this.Hide();
             f2.Show();
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

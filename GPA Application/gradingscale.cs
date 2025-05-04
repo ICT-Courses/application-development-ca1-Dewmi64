@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
+using Org.BouncyCastle.Math.EC;
 
 namespace GPA_Application
 {
@@ -63,6 +64,11 @@ namespace GPA_Application
 
         private void gradingscale_Load(object sender, EventArgs e)
         {
+            panel1.BackColor = Color.FromArgb(100, 0, 0 , 0);
+            panel2.BackColor = Color.FromArgb(100, 0, 0, 0);
+
+
+
             dataGridView1.ColumnCount = 3;
             dataGridView1.Columns[0].Name = "Grade";
             dataGridView1.Columns[1].Name = "Marks_level";
@@ -157,18 +163,23 @@ namespace GPA_Application
             f2.Show();
         }
 
-        private void button3_Click(object sender, EventArgs e)
-        {
-            EditGradingPopupForm f2 = new EditGradingPopupForm();
-            this.Hide();
-
-        }
+      
 
         private void button4_Click(object sender, EventArgs e)
         {
             GPA_Predictor f2 = new GPA_Predictor();
             this.Hide();
             f2.Show();
+
+        }
+
+        private void button3_Click_1(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
 
         }
     }

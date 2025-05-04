@@ -16,7 +16,7 @@ namespace GPA_Application
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Home());
+            Application.Run(new gradingscale());
         }
     }
 }

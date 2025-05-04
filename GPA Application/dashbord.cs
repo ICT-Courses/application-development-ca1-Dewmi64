@@ -30,7 +30,21 @@ namespace GPA_Application
 
         private void button3_Click(object sender, EventArgs e)
         {
-            
+            Weak_Area_Tracker f2 = new Weak_Area_Tracker();
+            this.Hide();
+            f2.Show();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            gradingscale f2 = new gradingscale();   
+            this.Hide();
+            f2.Show();
         }
     }
 }
