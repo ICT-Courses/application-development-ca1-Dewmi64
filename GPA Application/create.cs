@@ -103,5 +103,25 @@ namespace GPA_Application
         {
             
         }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox1.Checked)
+            {
+                textBox1.UseSystemPasswordChar = true;
+            }
+
+            else
+            {
+                textBox3.UseSystemPasswordChar = false;
+            }
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            create f2 = new create();
+            this.Hide();
+            f2.Show();
+        }
     }
 }

@@ -49,7 +49,7 @@
             // 
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel1.BackColor = System.Drawing.Color.LemonChiffon;
+            this.panel1.BackColor = System.Drawing.Color.SkyBlue;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.label1);
@@ -115,7 +115,7 @@
             // 
             this.richTextBox1.Location = new System.Drawing.Point(428, 160);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(367, 33);
+            this.richTextBox1.Size = new System.Drawing.Size(367, 43);
             this.richTextBox1.TabIndex = 8;
             this.richTextBox1.Text = "";
             // 
@@ -123,7 +123,7 @@
             // 
             this.richTextBox2.Location = new System.Drawing.Point(428, 258);
             this.richTextBox2.Name = "richTextBox2";
-            this.richTextBox2.Size = new System.Drawing.Size(367, 33);
+            this.richTextBox2.Size = new System.Drawing.Size(367, 46);
             this.richTextBox2.TabIndex = 9;
             this.richTextBox2.Text = "";
             // 
@@ -144,7 +144,7 @@
             this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button1.Location = new System.Drawing.Point(132, 482);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(663, 47);
+            this.button1.Size = new System.Drawing.Size(671, 47);
             this.button1.TabIndex = 11;
             this.button1.Text = "Save Assignment";
             this.button1.UseVisualStyleBackColor = false;
@@ -168,12 +168,13 @@
             this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.button3.Location = new System.Drawing.Point(544, 569);
+            this.button3.Location = new System.Drawing.Point(552, 569);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(251, 47);
             this.button3.TabIndex = 14;
             this.button3.Text = "Upcoming Assignmemnts";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // add_assignment
             // 
