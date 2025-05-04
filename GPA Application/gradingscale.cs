@@ -156,6 +156,21 @@ namespace GPA_Application
             this.Hide();
             f2.Show();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            EditGradingPopupForm f2 = new EditGradingPopupForm();
+            this.Hide();
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            GPA_Predictor f2 = new GPA_Predictor();
+            this.Hide();
+            f2.Show();
+
+        }
     }
 
 
