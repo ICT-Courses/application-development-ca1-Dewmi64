@@ -110,5 +110,12 @@ namespace GPA_Application
                 MessageBox.Show("Quote copied to clipboard! 📋", "Copied", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            dashbord f2 = dashbord();
+            this.Hide();
+            f2.Show();
+        }
     }
 }
