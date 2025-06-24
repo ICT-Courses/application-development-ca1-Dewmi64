@@ -148,36 +148,73 @@ namespace GPA_Application
             
         private DataTable excelTable;
 
+
         private void button1_Click(object sender, EventArgs e)
         {
+            using (OpenFileDialog ofd = new OpenFileDialog() { Filter = "Excel Files|*.xls;*.xlsx" })
             {
-                using (OpenFileDialog ofd = new OpenFileDialog() { Filter = "Excel Files|*.xls;*.xlsx" })
+                if (ofd.ShowDialog() == DialogResult.OK)
                 {
-                    if (ofd.ShowDialog() == DialogResult.OK)
+                    // Show selected file name
+                    textBox1.Text = Path.GetFileName(ofd.FileName);
+                    labelStatus.Text = "Uploading...";
+                    labelStatus.ForeColor = Color.White;
+
+                    try
                     {
+                        // Read the selected Excel file
                         using (var stream = File.Open(ofd.FileName, FileMode.Open, FileAccess.Read))
                         {
-                            using (var reader = ExcelReaderFactory.CreateReader(stream))
+                            using (var reader = ExcelDataReader.ExcelReaderFactory.CreateReader(stream))
                             {
                                 var conf = new ExcelDataSetConfiguration
                                 {
-                                    ConfigureDataTable = _ => new ExcelDataTableConfiguration { UseHeaderRow = true }
+                                    ConfigureDataTable = _ => new ExcelDataTableConfiguration
+                                    {
+                                        UseHeaderRow = true
+                                    }
                                 };
 
                                 var dataSet = reader.AsDataSet(conf);
                                 excelTable = dataSet.Tables[0];
+
+                                // Success message
+                                labelStatus.Text = "✅ File uploaded successfully!";
+                                labelStatus.ForeColor = Color.LightGreen;
                             }
                         }
                     }
+                    catch (Exception ex)
+                    {
+                        labelStatus.Text = "❌ Error: " + ex.Message;
+                        labelStatus.ForeColor = Color.Red;
+                    }
+                }
+                else
+                {
+                    textBox1.Text = "No file selected";
+                    labelStatus.Text = "Upload cancelled.";
+                    labelStatus.ForeColor = Color.Gray;
                 }
             }
         }
 
-            
+
+
+
 
         private void GPA_calculationcs_Load(object sender, EventArgs e)
         {
             panel1.BackColor = Color.FromArgb(100, 0, 0, 0);
+            
+
+            ButtonCornerStyler.ApplyRoundedCorners(button2, 30);
+            ButtonCornerStyler.ApplyRoundedCorners(button3, 30);
+            ButtonCornerStyler.ApplyRoundedCorners(button4, 30);
+            ButtonCornerStyler.ApplyRoundedCorners(button6, 30);
+
+            label10.Text = UserCredentials.Username;
+
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -277,6 +314,52 @@ namespace GPA_Application
             view_academic_performance f2 = new view_academic_performance();
             this.Hide();
             f2.Show();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label10_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click_1(object sender, EventArgs e)
+        {
+            GPA_Cal_Home f2 = new GPA_Cal_Home();
+            this.Hide();
+            f2.Show();
+        }
+
+        private void button13_Click(object sender, EventArgs e)
+        {
+            GPA_Predictor f2 = new GPA_Predictor();
+            this.Hide();
+            f2.Show();
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            view_predictions f2 = new view_predictions();
+            this.Hide();
+            f2.Show();
+        }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
