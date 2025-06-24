@@ -12,20 +12,23 @@ namespace GPA_Application
     {
         string connectionString = "server=localhost;user=root;database=grading_scale_database;password=Hwcs@1969;";
 
-        
         private List<(PredictionCardControl card, string semester, DateTime timestamp, List<(string subject, string grade)> subjects)> allCards
             = new List<(PredictionCardControl, string, DateTime, List<(string, string)>)>();
 
         public view_predictions()
         {
             InitializeComponent();
-
-            
             txtSearch.TextChanged += txtSearch_TextChanged;
         }
 
         private void view_predictions_Load(object sender, EventArgs e)
         {
+
+            ButtonCornerStyler.ApplyRoundedCorners(button1, 30);
+            
+
+            label10.Text = UserCredentials.Username;
+
             LoadAllPredictionCards();
         }
 
@@ -57,17 +60,25 @@ namespace GPA_Application
                 foreach (var (semester, timestamp) in semesterTimestampList)
                 {
                     double gpa = GetGPA(conn, semester, timestamp);
+                    double overallGPA = GetOverallGPA(conn, semester, timestamp);
                     var subjects = GetSubjects(conn, semester, timestamp);
 
                     PredictionCardControl card = new PredictionCardControl
                     {
                         Semester = $"{semester} ({timestamp:yyyy-MM-dd HH:mm})",
-                        GPA = gpa.ToString("0.00")
+                        GPA = gpa.ToString("0.00"),
+                        OverallGPA = overallGPA.ToString("0.00")
                     };
 
                     card.SetSubjects(subjects);
 
-                    // Store for searching/filtering
+                    // 🔁 Bind delete event
+                    card.DeleteClicked += (s, e) =>
+                    {
+                        DeletePrediction(semester, timestamp);
+                        flowLayoutPanel1.Controls.Remove(card);
+                    };
+
                     allCards.Add((card, semester, timestamp, subjects));
 
                     flowLayoutPanel1.Controls.Add(card);
@@ -75,10 +86,75 @@ namespace GPA_Application
             }
         }
 
+        private void DeletePrediction(string semester, DateTime timestamp)
+        {
+          
+            try
+            {
+                using (MySqlConnection conn = new MySqlConnection(connectionString))
+                {
+                    conn.Open();
+
+                    string deleteQuery = "DELETE FROM predicted_results WHERE semester = @sem AND upload_timestamp = @ts";
+                    MySqlCommand cmd = new MySqlCommand(deleteQuery, conn);
+                    cmd.Parameters.AddWithValue("@sem", semester);
+                    cmd.Parameters.AddWithValue("@ts", timestamp);
+
+                    int rowsAffected = cmd.ExecuteNonQuery();
+
+                    if (rowsAffected > 0)
+                    {
+                        MessageBox.Show("Prediction deleted successfully.", "Deleted", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Prediction not found or already deleted.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
+                }
+
+                // 🔄 Refresh card list after delete (optional)
+                LoadAllPredictionCards();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error deleting prediction: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        
+
         private double GetGPA(MySqlConnection conn, string semester, DateTime timestamp)
         {
-            string gpaQuery = "SELECT gpa FROM predicted_results WHERE semester = @sem AND upload_timestamp = @ts LIMIT 1";
+            string gpaQuery = @"SELECT gpa 
+                        FROM predicted_results 
+                        WHERE semester = @sem 
+                          AND upload_timestamp = @ts 
+                          AND is_overall_prediction = FALSE 
+                        LIMIT 1";
+
             MySqlCommand cmd = new MySqlCommand(gpaQuery, conn);
+            cmd.Parameters.AddWithValue("@sem", semester);
+            cmd.Parameters.AddWithValue("@ts", timestamp);
+
+            object result = cmd.ExecuteScalar();
+
+            // ✅ Check if result is not null AND not DBNull
+            if (result != null && result != DBNull.Value)
+                return Convert.ToDouble(result);
+            else
+                return 0.0;
+        }
+
+
+
+        private double GetOverallGPA(MySqlConnection conn, string semester, DateTime timestamp)
+        {
+            string query = @"SELECT gpa FROM predicted_results 
+                             WHERE semester = @sem 
+                             AND upload_timestamp = @ts 
+                             AND is_overall_prediction = TRUE 
+                             LIMIT 1";
+            MySqlCommand cmd = new MySqlCommand(query, conn);
             cmd.Parameters.AddWithValue("@sem", semester);
             cmd.Parameters.AddWithValue("@ts", timestamp);
 
@@ -90,7 +166,7 @@ namespace GPA_Application
         {
             var list = new List<(string, string)>();
 
-            string subjectQuery = "SELECT subject, grade FROM predicted_results WHERE semester = @sem AND upload_timestamp = @ts";
+            string subjectQuery = "SELECT subject, grade FROM predicted_results WHERE semester = @sem AND upload_timestamp = @ts AND is_overall_prediction = FALSE";
             MySqlCommand cmd = new MySqlCommand(subjectQuery, conn);
             cmd.Parameters.AddWithValue("@sem", semester);
             cmd.Parameters.AddWithValue("@ts", timestamp);
@@ -107,7 +183,6 @@ namespace GPA_Application
             return list;
         }
 
-        // Search TextChanged event handler
         private void txtSearch_TextChanged(object sender, EventArgs e)
         {
             string searchTerm = txtSearch.Text.Trim().ToLower();
@@ -130,8 +205,17 @@ namespace GPA_Application
             this.Hide();
             f2.Show();
         }
+
+        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e) { }
+
+        private void flowLayoutPanel1_Paint_1(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
-
-
-

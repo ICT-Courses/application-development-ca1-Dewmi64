@@ -32,6 +32,13 @@ namespace GPA_Application
             set => lblGPA.Text = $"🎯 Predicted GPA: {value}";
         }
 
+        public string OverallGPA
+        {
+            get => label1.Text;
+            set => label1.Text = $"📊 According to this prediction, overall GPA will be: {value}";
+        }
+
+
         public void SetSubjects(List<(string subject, string grade)> subjects)
         {
             tableLayoutPanelSubjects.Controls.Clear();
@@ -100,12 +107,22 @@ namespace GPA_Application
 
         private void button1_Click(object sender, EventArgs e) //Delete button
         {
-            
+            // Confirm delete
+            DialogResult result = MessageBox.Show("Are you sure you want to delete this prediction?",
+                                                  "Confirm Delete",
+                                                  MessageBoxButtons.YesNo,
+                                                  MessageBoxIcon.Warning);
+
+            if (result == DialogResult.Yes)
+            {
+                DeleteClicked?.Invoke(this, EventArgs.Empty); // 🔔 Raise event to parent
+            }
         }
 
         private void PredictionCardControl_Load(object sender, EventArgs e)
         {
 
+            
         }
 
         private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)

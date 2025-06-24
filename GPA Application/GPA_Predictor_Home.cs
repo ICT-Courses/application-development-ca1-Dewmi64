@@ -65,5 +65,10 @@ namespace GPA_Application
             this.Hide();
             f2.Show();
         }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

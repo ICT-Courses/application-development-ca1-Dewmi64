@@ -247,7 +247,7 @@
             this.label2.ForeColor = System.Drawing.Color.Aqua;
             this.label2.Location = new System.Drawing.Point(375, 23);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(522, 60);
+            this.label2.Size = new System.Drawing.Size(508, 58);
             this.label2.TabIndex = 26;
             this.label2.Text = "Welcome to the GPA Predictor!";
             // 
@@ -357,6 +357,7 @@
             this.button12.TabIndex = 50;
             this.button12.Text = "Exit";
             this.button12.UseVisualStyleBackColor = false;
+            this.button12.Click += new System.EventHandler(this.button12_Click);
             // 
             // label3
             // 

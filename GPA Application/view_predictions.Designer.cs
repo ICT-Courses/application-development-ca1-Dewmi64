@@ -67,6 +67,7 @@
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(939, 660);
             this.flowLayoutPanel1.TabIndex = 2;
+            this.flowLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanel1_Paint_1);
             // 
             // panel1
             // 
@@ -80,33 +81,35 @@
             this.panel1.Controls.Add(this.label12);
             this.panel1.Location = new System.Drawing.Point(1, -6);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(307, 815);
+            this.panel1.Size = new System.Drawing.Size(320, 860);
             this.panel1.TabIndex = 3;
             // 
             // button13
             // 
             this.button13.BackColor = System.Drawing.Color.Transparent;
+            this.button13.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button13.BackgroundImage")));
             this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button13.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button13.ForeColor = System.Drawing.Color.Gray;
+            this.button13.ForeColor = System.Drawing.Color.LightGray;
             this.button13.Location = new System.Drawing.Point(53, 477);
             this.button13.Name = "button13";
             this.button13.Size = new System.Drawing.Size(178, 35);
             this.button13.TabIndex = 53;
-            this.button13.Text = "Help";
+            this.button13.Text = "Motivate me";
             this.button13.UseVisualStyleBackColor = false;
             // 
             // button11
             // 
             this.button11.BackColor = System.Drawing.Color.Transparent;
+            this.button11.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button11.BackgroundImage")));
             this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button11.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button11.ForeColor = System.Drawing.Color.Gray;
+            this.button11.ForeColor = System.Drawing.Color.LightGray;
             this.button11.Location = new System.Drawing.Point(53, 403);
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(178, 35);
             this.button11.TabIndex = 52;
-            this.button11.Text = "About";
+            this.button11.Text = "Dashboard";
             this.button11.UseVisualStyleBackColor = false;
             // 
             // button12
@@ -116,12 +119,13 @@
             this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button12.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.button12.Location = new System.Drawing.Point(78, 664);
+            this.button12.Location = new System.Drawing.Point(85, 687);
             this.button12.Name = "button12";
             this.button12.Size = new System.Drawing.Size(125, 35);
             this.button12.TabIndex = 47;
             this.button12.Text = "Exit";
             this.button12.UseVisualStyleBackColor = false;
+            this.button12.Click += new System.EventHandler(this.button12_Click);
             // 
             // label3
             // 
@@ -142,9 +146,9 @@
             this.label10.ForeColor = System.Drawing.Color.White;
             this.label10.Location = new System.Drawing.Point(93, 295);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(110, 16);
+            this.label10.Size = new System.Drawing.Size(70, 16);
             this.label10.TabIndex = 50;
-            this.label10.Text = "Dewmini Karavita";
+            this.label10.Text = "Username";
             // 
             // label11
             // 
@@ -198,6 +202,8 @@
             // txtSearch
             // 
             this.txtSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.txtSearch.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtSearch.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSearch.Location = new System.Drawing.Point(413, 25);
             this.txtSearch.Multiline = true;
             this.txtSearch.Name = "txtSearch";
