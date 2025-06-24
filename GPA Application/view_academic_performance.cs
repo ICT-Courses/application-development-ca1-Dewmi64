@@ -10,155 +10,210 @@ namespace GPA_Application
 {
     public partial class view_academic_performance : Form
     {
-        private FlowLayoutPanel panelContainer;
+        private List<(SemesterCardControl card, string semester, List<(string subject, string grade)>)> allCards =
+            new List<(SemesterCardControl, string, List<(string, string)>)>();
+
         public view_academic_performance()
         {
             InitializeComponent();
-            InitializePanel();
-        }
-
-        private void InitializePanel()
-        {
-            panelContainer = new FlowLayoutPanel();
-            panelContainer.Location = new Point(10, 50);
-            panelContainer.Size = new Size(980, 654); // Adjust width to fit two cards
-            panelContainer.FlowDirection = FlowDirection.LeftToRight; // Horizontal layout
-            panelContainer.WrapContents = true; // Enable wrapping to next row
-            panelContainer.AutoScroll = true; // Allow vertical scrolling
-            panelContainer.Padding = new Padding(10);
-            panelContainer.BackColor = Color.SkyBlue;
-            this.Controls.Add(panelContainer);
         }
 
 
 
         private void view_academic_performance_Load(object sender, EventArgs e)
         {
+
+            label10.Text = UserCredentials.Username;
+
+            flowLayoutPanel1.Controls.Clear();
+            allCards.Clear();
+
             string connectionString = "server=localhost;user=root;database=grading_scale_database;password=Hwcs@1969;";
+
+            Dictionary<string, List<(string subject, string grade)>> data = new Dictionary<string, List<(string subject, string grade)>>();
+            Dictionary<string, (string GPA, string Credits)> gpaInfo = new Dictionary<string, (string GPA, string Credits)>();
+
+            
             using (MySqlConnection con = new MySqlConnection(connectionString))
             {
-                // Corrected SQL Query:  The issue was the unnecessary line break and whitespace before the FROM clause.
-                string query = "SELECT SemesterName, SubjectName, Grade FROM SemesterResults ORDER BY SemesterName";
+                string query = "SELECT SemesterName, SubjectName, Grade, GPA, TotalNumberOfCredits FROM SemesterResults ORDER BY SemesterName";
                 MySqlCommand cmd = new MySqlCommand(query, con);
                 con.Open();
-                MySqlDataReader reader = cmd.ExecuteReader();
-                Dictionary<string, HashSet<(string SubjectName, string Grade)>> semesterData =
-                    new Dictionary<string, HashSet<(string, string)>>();
+                var reader = cmd.ExecuteReader();
+
                 while (reader.Read())
                 {
-                    string semesterName = reader["SemesterName"].ToString();
-                    string subjectName = reader["SubjectName"].ToString();
+                    string semester = reader["SemesterName"].ToString();
+                    string subject = reader["SubjectName"].ToString();
                     string grade = reader["Grade"].ToString();
-                    if (!semesterData.ContainsKey(semesterName))
-                    {
-                        semesterData[semesterName] = new HashSet<(string, string)>();
-                    }
-                    semesterData[semesterName].Add((subjectName, grade));
+                    string gpa = reader["GPA"].ToString();
+                    string credits = reader["TotalNumberOfCredits"].ToString();
+
+                    if (!data.ContainsKey(semester))
+                        data[semester] = new List<(string, string)>();
+
+                    data[semester].Add((subject, grade));
+                    gpaInfo[semester] = (gpa, credits);
                 }
                 con.Close();
-                foreach (var semester in semesterData)
+            }
+
+            List<string> expectedSemesters = new List<string>
+    {
+        "1st Year 1st Semester",
+        "1st Year 2nd Semester",
+        "2nd Year 1st Semester",
+        "2nd Year 2nd Semester",
+        "3rd Year 1st Semester",
+        "3rd Year 2nd Semester",
+        "4th Year 1st Semester",
+        "4th Year 2nd Semester"
+    };
+
+            
+            foreach (var sem in expectedSemesters)
+            {
+                if (data.ContainsKey(sem))
                 {
-                    Panel cardPanel = CreateSemesterCard(semester.Key, semester.Value.ToList());
-                    panelContainer.Controls.Add(cardPanel);
+                  
+                    var subjectList = data[sem];
+                    var (gpa, credits) = gpaInfo[sem];
+
+                    SemesterCardControl card = new SemesterCardControl
+                    {
+                        SemesterName = sem,
+                        GPA = gpa,
+                     
+                    };
+                    card.SetSubjects(subjectList);
+                    card.OnDeleteClicked += Card_OnDeleteClicked;
+
+                    allCards.Add((card, sem, subjectList));
+                    flowLayoutPanel1.Controls.Add(card);
+                }
+                else
+                {
+                    // If data is missing, display a warning
+
+                    Label gapLabel = new Label
+                    {
+                        Text = $"⚠️ No results available for {sem}",
+                        AutoSize = true,
+                        ForeColor = Color.DarkSlateBlue,
+                        Font = new Font("Segoe UI", 10, FontStyle.Italic),
+                        Margin = new Padding(10, 5, 10, 10)
+                    };
+                    flowLayoutPanel1.Controls.Add(gapLabel);
+                }
+            }
+
+            // Latest overall GPA 
+            using (MySqlConnection gpaCon = new MySqlConnection(connectionString))
+            {
+                string gpaQuery = "SELECT OverallGPA FROM CumulativeSemesterResults ORDER BY SemesterName DESC LIMIT 1";
+                MySqlCommand gpaCmd = new MySqlCommand(gpaQuery, gpaCon);
+                gpaCon.Open();
+                object result = gpaCmd.ExecuteScalar();
+                gpaCon.Close();
+
+                if (result != null)
+                {
+                    double latestOverallGPA = Convert.ToDouble(result);
+                    richTextBox1.Text = $"🎓 Your Latest Overall GPA: {latestOverallGPA:0.00}";
+                }
+                else
+                {
+                    richTextBox1.Text = "No GPA data found.";
                 }
             }
         }
 
-        private Panel CreateSemesterCard(string semesterName, List<(string SubjectName, string Grade)> subjects)
+
+
+        private void Card_OnDeleteClicked(object sender, string semesterName)
         {
-            Panel cardPanel = new Panel();
-            cardPanel.Width = 350;
-            cardPanel.AutoSize = true;
-            cardPanel.BackColor = Color.WhiteSmoke;
-            cardPanel.BorderStyle = BorderStyle.FixedSingle;
-            cardPanel.Margin = new Padding(10);
-            Label semesterTitleLabel = new Label();
-            semesterTitleLabel.Text = semesterName;
-            semesterTitleLabel.Font = new Font("Segoe UI", 14, FontStyle.Bold);
-            semesterTitleLabel.AutoSize = true;
-            semesterTitleLabel.Location = new Point(10, 10);
-            cardPanel.Controls.Add(semesterTitleLabel);
-            string gpa = "", totalCredits = "";
+            var confirm = MessageBox.Show($"Are you sure you want to delete all data for '{semesterName}'?",
+                                          "Confirm Delete", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (confirm != DialogResult.Yes) return;
+
             string connectionString = "server=localhost;user=root;database=grading_scale_database;password=Hwcs@1969;";
-            using (MySqlConnection con = new MySqlConnection(connectionString))
+            using (var con = new MySqlConnection(connectionString))
             {
-                string query = "SELECT GPA, TotalNumberOfCredits FROM SemesterResults WHERE SemesterName = @semester LIMIT 1";
-                MySqlCommand cmd = new MySqlCommand(query, con);
-                cmd.Parameters.AddWithValue("@semester", semesterName);
                 con.Open();
-                MySqlDataReader reader = cmd.ExecuteReader();
-                if (reader.Read())
-                {
-                    gpa = reader["GPA"].ToString();
-                    totalCredits = reader["TotalNumberOfCredits"].ToString();
-                }
-            }
-            int yOffset = 40;
-            Label gpaLabel = new Label();
-            gpaLabel.Text = "GPA: " + gpa;
-            gpaLabel.Font = new Font("Segoe UI", 11, FontStyle.Regular);
-            gpaLabel.AutoSize = true;
-            gpaLabel.Location = new Point(10, yOffset);
-            cardPanel.Controls.Add(gpaLabel);
-            yOffset += 25;
-            Label creditLabel = new Label();
-            creditLabel.Text = "Total Credits: " + totalCredits;
-            creditLabel.Font = new Font("Segoe UI", 11, FontStyle.Regular);
-            creditLabel.AutoSize = true;
-            creditLabel.Location = new Point(10, yOffset);
-            cardPanel.Controls.Add(creditLabel);
-            yOffset += 30;
-            foreach (var subject in subjects)
-            {
-                Label subjectLabel = new Label();
-                subjectLabel.Text = subject.SubjectName;
-                subjectLabel.Font = new Font("Segoe UI", 12, FontStyle.Regular);
-                subjectLabel.AutoSize = true;
-                subjectLabel.Location = new Point(15, yOffset);
-                cardPanel.Controls.Add(subjectLabel);
-                Label gradeLabel = new Label();
-                gradeLabel.Text = subject.Grade;
-                gradeLabel.Font = new Font("Segoe UI", 12, FontStyle.Bold);
-                gradeLabel.AutoSize = true;
-                gradeLabel.Location = new Point(250, yOffset);
-                cardPanel.Controls.Add(gradeLabel);
-                yOffset += 30;
-            }
-            // Add delete label at the bottom of the card
-            Label deleteLabel = new Label();
-            deleteLabel.Text = "  🗑";
-            deleteLabel.ForeColor = Color.Red;
-            deleteLabel.AutoSize = true;
-            deleteLabel.Cursor = Cursors.Hand;
-            deleteLabel.Location = new Point(cardPanel.Width - 80, yOffset);
-            deleteLabel.Tag = semesterName; // use this to identify which semester to delete
-            deleteLabel.Click += DeleteLabel_Click;
-            cardPanel.Controls.Add(deleteLabel);
-            return cardPanel;
-        }
 
-        private void DeleteLabel_Click(object sender, EventArgs e)
-        {
-            Label deleteLabel = sender as Label;
-            string semesterToDelete = deleteLabel.Tag.ToString();
-            DialogResult result = MessageBox.Show(
-              $"Are you sure you want to delete all records for '{semesterToDelete}'?",
-              "Confirm Delete", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
-            if (result == DialogResult.Yes)
-            {
-                string connectionString = "server=localhost;user=root;database=grading_scale_database;password=Hwcs@1969;";
-                using (MySqlConnection con = new MySqlConnection(connectionString))
+                // 1. Delete from SemesterResults
+                string deleteSemesterQuery = "DELETE FROM SemesterResults WHERE SemesterName = @semester";
+                using (var cmd = new MySqlCommand(deleteSemesterQuery, con))
                 {
-                    string deleteQuery = "DELETE FROM SemesterResults WHERE SemesterName = @semester";
-                    MySqlCommand cmd = new MySqlCommand(deleteQuery, con);
-                    cmd.Parameters.AddWithValue("@semester", semesterToDelete);
-                    con.Open();
+                    cmd.Parameters.AddWithValue("@semester", semesterName);
                     cmd.ExecuteNonQuery();
                 }
-                // Refresh UI
-                panelContainer.Controls.Clear();
-                view_academic_performance_Load(null, null);
+
+                // 2. Delete from CumulativeSemesterResults (to keep it in sync)
+                string deleteCumulativeQuery = "DELETE FROM CumulativeSemesterResults WHERE SemesterName = @semester";
+                using (var cmd = new MySqlCommand(deleteCumulativeQuery, con))
+                {
+                    cmd.Parameters.AddWithValue("@semester", semesterName);
+                    cmd.ExecuteNonQuery();
+                }
+
+                con.Close();
             }
+
+            //  Refresh cards and overall GPA
+            view_academic_performance_Load(null, null);
+        }
+
+
+        private void richTextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button13_Click(object sender, EventArgs e)
+        {
+
+            Weak_Area_Tracker f2 = new Weak_Area_Tracker();
+            this.Hide();
+            f2.Show();
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            dashbord f2 = new dashbord();
+            this.Hide();
+            f2.Show();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Motivation f2 = new Motivation();
+            this.Hide();
+            f2.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            GPA_calculationcs f2 = new GPA_calculationcs();
+            this.Hide();
+            f2.Show();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            gradingscale f2 = new gradingscale();
+            this.Hide();
+            f2.Show();
         }
     }
 }
