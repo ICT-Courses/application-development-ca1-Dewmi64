@@ -51,13 +51,13 @@
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button1.Font = new System.Drawing.Font("Myanmar Text", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.button1.Location = new System.Drawing.Point(553, 153);
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(540, 146);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(523, 41);
+            this.button1.Size = new System.Drawing.Size(548, 48);
             this.button1.TabIndex = 2;
             this.button1.Text = "Analyze Weak Area";
             this.button1.UseVisualStyleBackColor = false;
@@ -92,7 +92,7 @@
             this.lblStatus.BackColor = System.Drawing.Color.Transparent;
             this.lblStatus.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblStatus.ForeColor = System.Drawing.Color.White;
-            this.lblStatus.Location = new System.Drawing.Point(746, 229);
+            this.lblStatus.Location = new System.Drawing.Point(648, 229);
             this.lblStatus.Name = "lblStatus";
             this.lblStatus.Size = new System.Drawing.Size(102, 30);
             this.lblStatus.TabIndex = 15;
@@ -133,34 +133,38 @@
             this.panel2.Controls.Add(this.label12);
             this.panel2.Location = new System.Drawing.Point(-2, -1);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(309, 793);
+            this.panel2.Size = new System.Drawing.Size(320, 860);
             this.panel2.TabIndex = 20;
             // 
             // button13
             // 
             this.button13.BackColor = System.Drawing.Color.Transparent;
+            this.button13.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button13.BackgroundImage")));
             this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button13.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button13.ForeColor = System.Drawing.Color.Gray;
+            this.button13.ForeColor = System.Drawing.Color.LightGray;
             this.button13.Location = new System.Drawing.Point(54, 476);
             this.button13.Name = "button13";
             this.button13.Size = new System.Drawing.Size(178, 35);
             this.button13.TabIndex = 53;
-            this.button13.Text = "Help";
+            this.button13.Text = "Motivate me";
             this.button13.UseVisualStyleBackColor = false;
+            this.button13.Click += new System.EventHandler(this.button13_Click);
             // 
             // button11
             // 
             this.button11.BackColor = System.Drawing.Color.Transparent;
+            this.button11.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button11.BackgroundImage")));
             this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button11.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button11.ForeColor = System.Drawing.Color.Gray;
+            this.button11.ForeColor = System.Drawing.Color.LightGray;
             this.button11.Location = new System.Drawing.Point(54, 402);
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(178, 35);
             this.button11.TabIndex = 52;
-            this.button11.Text = "About";
+            this.button11.Text = "Dashboard";
             this.button11.UseVisualStyleBackColor = false;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
             // button12
             // 
@@ -169,19 +173,20 @@
             this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button12.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.button12.Location = new System.Drawing.Point(79, 653);
+            this.button12.Location = new System.Drawing.Point(85, 687);
             this.button12.Name = "button12";
             this.button12.Size = new System.Drawing.Size(125, 35);
             this.button12.TabIndex = 47;
             this.button12.Text = "Exit";
             this.button12.UseVisualStyleBackColor = false;
+            this.button12.Click += new System.EventHandler(this.button12_Click);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.label4.ForeColor = System.Drawing.Color.Aqua;
             this.label4.Location = new System.Drawing.Point(56, 154);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(196, 135);
@@ -195,9 +200,9 @@
             this.label10.ForeColor = System.Drawing.Color.White;
             this.label10.Location = new System.Drawing.Point(94, 294);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(110, 16);
+            this.label10.Size = new System.Drawing.Size(70, 16);
             this.label10.TabIndex = 50;
-            this.label10.Text = "Dewmini Karavita";
+            this.label10.Text = "Username";
             // 
             // label11
             // 
@@ -216,7 +221,7 @@
             this.label12.AutoSize = true;
             this.label12.BackColor = System.Drawing.Color.Transparent;
             this.label12.Font = new System.Drawing.Font("Myanmar Text", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.label12.ForeColor = System.Drawing.Color.Aqua;
             this.label12.Location = new System.Drawing.Point(47, 80);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(215, 41);
@@ -257,11 +262,11 @@
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(547, 97);
+            this.label3.Location = new System.Drawing.Point(534, 93);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(138, 32);
+            this.label3.Size = new System.Drawing.Size(165, 36);
             this.label3.TabIndex = 24;
             this.label3.Text = "Select Semester";
             // 

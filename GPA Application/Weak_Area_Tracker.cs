@@ -15,6 +15,11 @@ namespace GPA_Application
 
         private void Weak_Area_Tracker_Load(object sender, EventArgs e)
         {
+            label10.Text = UserCredentials.Username;
+
+            ButtonCornerStyler.ApplyRoundedCorners(button1, 30);
+            
+
             // Hide UI elements initially
             flowLayoutPanel1.Controls.Clear();
             flowLayoutPanel1.Visible = false;
@@ -150,6 +155,25 @@ namespace GPA_Application
             dashbord f2 = new dashbord();
             this.Hide();
             f2.Show();
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            dashbord f2 = new dashbord();
+            this.Hide();
+            f2.Show();
+        }
+
+        private void button13_Click(object sender, EventArgs e)
+        {
+            Motivation f2 = new Motivation();
+            this.Hide();
+            f2.Show();
+        }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

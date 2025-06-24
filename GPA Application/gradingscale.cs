@@ -67,6 +67,8 @@ namespace GPA_Application
             panel1.BackColor = Color.FromArgb(100, 0, 0 , 0);
             panel2.BackColor = Color.FromArgb(100, 0, 0, 0);
 
+            label10.Text = UserCredentials.Username;
+
 
 
             dataGridView1.ColumnCount = 3;
@@ -181,6 +183,40 @@ namespace GPA_Application
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label10_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            dashbord f2 = new dashbord();
+            this.Hide();
+            f2.Show();
+        }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            GPA_Cal_Home f2 = new GPA_Cal_Home();
+            this.Hide();
+            f2.Show();
         }
     }
 

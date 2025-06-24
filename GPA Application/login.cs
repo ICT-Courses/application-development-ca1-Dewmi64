@@ -98,9 +98,19 @@ namespace GPA_Application
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            login f2 = new login();
+            create f2 = new create();
             this.Hide();
             f2.Show();
+        }
+
+        private void panel1_Paint_1(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

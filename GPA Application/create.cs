@@ -16,31 +16,26 @@ namespace GPA_Application
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(textBox1.Text) || string.IsNullOrWhiteSpace(textbox2.Text) || string.IsNullOrWhiteSpace(textBox3.Text))
+            if (string.IsNullOrWhiteSpace(textBox1.Text) || string.IsNullOrWhiteSpace(textBox2.Text) || string.IsNullOrWhiteSpace(textBox3.Text))
             {
                 MessageBox.Show("Please fill in all fields before creating an account.","Incomplete Input",MessageBoxButtons.OK,MessageBoxIcon.Warning);
             
             }
-            else if (textbox2.Text != textBox3.Text)
+            else if (textBox2.Text != textBox3.Text)
             {
                 MessageBox.Show(" Confirm Passwords do not match.","Password Mismatch",MessageBoxButtons.OK,MessageBoxIcon.Error);
             }
             else
             {
                 UserCredentials.Username = textBox1.Text;
-                UserCredentials.Password = textbox2.Text;
+                UserCredentials.Password = textBox2.Text;
 
 
-               
-
-                MessageBox.Show("Account created successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-               
-
-
-                login f2 = new login();
                 this.Hide();
-                f2.Show();
+                SuccessSplash splash = new SuccessSplash();
+                splash.Show();
+
+
             }
         }
         
@@ -61,7 +56,7 @@ namespace GPA_Application
         private void button3_Click(object sender, EventArgs e)
         {
             textBox1.Clear();
-            textbox2.Clear();
+            textBox2.Clear();
         }
 
         private void create_Load(object sender, EventArgs e)
@@ -71,15 +66,15 @@ namespace GPA_Application
 
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
-            if (Regex.IsMatch(textbox2.Text, @"^[A-Za-z]{4}[^A-Za-z0-9]{1}$"))
-            {
-                errorProvider1.SetError(textbox2, " ");
-            }
-            else
-            {
-                errorProvider1.SetError(textbox2, "Must contain exactly four letters and one symbol");
-            }
+          
+         
+            
         }
+        
+
+
+
+
 
         private void textBox3_TextChanged(object sender, EventArgs e)
         {
@@ -109,18 +104,19 @@ namespace GPA_Application
         {
             if (checkBox1.Checked)
             {
-                textBox1.UseSystemPasswordChar = true;
+                textBox3.UseSystemPasswordChar = true;
             }
 
             else
             {
                 textBox3.UseSystemPasswordChar = false;
             }
+
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            create f2 = new create();
+            login f2 = new login();
             this.Hide();
             f2.Show();
         }
@@ -129,5 +125,33 @@ namespace GPA_Application
         {
 
         }
+
+        
+
+        
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void checkBox2_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox2.Checked)
+            {
+                textBox2.UseSystemPasswordChar = true;
+            }
+
+            else
+            {
+                textBox2.UseSystemPasswordChar = false;
+            }
+        }
+
+        private void toolTip1_Popup(object sender, PopupEventArgs e)
+        {
+            
+        }
     }
+
 }
